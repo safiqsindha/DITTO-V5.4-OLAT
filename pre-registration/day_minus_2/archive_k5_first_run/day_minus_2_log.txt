@@ -1,0 +1,69 @@
+========================================================================
+Day -2 — Pre-OLAT V1-on-Flash Verification
+========================================================================
+Model:        deepseek-v4-flash
+Endpoint:     https://api.deepseek.com
+Temperature:  0.0
+max_tokens:   32  (Lever 18 L1 = V1 32-token cap)
+cutoff k:     5    (Lever 8 L2 baseline)
+thinking:     disabled (extra_body, per Lever 12 L3 constraint)
+Sample:       /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_3/verification_n250_sample.jsonl
+
+Lever 15 interpretation: L2 (YES/NO) — see Day -2 docstring for rationale.
+Question:     'Does this battle chain contain any rule violations?'
+Anchor:       'The answer is YES or NO.'
+========================================================================
+Key prefix: sk-105d6... (length=35)
+Sample loaded: 250 chains
+
+Starting parallel API calls...
+  Progress: 25/250
+  Progress: 50/250
+  Progress: 75/250
+  Progress: 100/250
+  Progress: 125/250
+  Progress: 150/250
+  Progress: 175/250
+  Progress: 200/250
+  Progress: 225/250
+  Progress: 250/250
+All calls complete in 51.1s (0.20s/call avg)
+
+Raw responses written:    /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_2/raw_responses.ndjson
+Parser provenance written: /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_2/parser_provenance.ndjson
+
+========================================================================
+Verification Metrics
+========================================================================
+n_attempted:               250
+n_valid (parseable+no_err): 250
+errors:                    0
+unparseable:               0
+parse_failure_rate:        0.0000
+
+Parse stage breakdown:
+  strict           0  (  0.0%)
+  permissive       0  (  0.0%)
+  first_token    250  (100.0%)
+  unparseable      0  (  0.0%)
+
+n_intact:                  68
+n_violated:                182
+detection_rate_intact:     1.0000
+detection_rate_violated:   0.0000
+gap (violated - intact):   -1.0000
+Cohen's h:                 -3.1416
+95% bootstrap CI of gap:   [-1.0000, -1.0000]  (n_boot=2000, seed=1337)
+
+YES_rate:                  0.0000
+NO_rate:                   1.0000
+
+========================================================================
+Scenario Classification (S1-S6)
+========================================================================
+PAUSE triggered:
+  - S2 (anti-detection): gap < -0.05
+  - S5 (degenerate output)
+Both-author review required before Day -1 signoff.
+
+Results written:           /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_2/verification_results.json

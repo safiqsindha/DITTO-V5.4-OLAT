@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L09_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2310254076_p2_shuffled_42",
+  "lever_varied": 9,
+  "level_varied": "L3",
+  "lever": 9,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "=== unit_C ===\nstep=1 | turn=6 | resource:hp_unit_C | amount:0.25 | decay:none | recover_in:null | type:ResourceBudget\nstep=6 | turn=7 | resource:hp_unit_C | amount:0.75 | decay:none | recover_in:null | type:ResourceBudget\nstep=8 | turn=8 | tool:unit_C | state:available | recover_in:null | type:ToolAvailability\nstep=12 | turn=9 | resource:hp_unit_C | amount:0.25 | decay:none | recover_in:null | type:ResourceBudget\n\n=== own ===\nstep=2 | turn=6 | from_phase:vs_unit_C | to_phase:vs_unit_D | trigger:opponent_switch | type:SubGoalTransition\nstep=5 | turn=7 | resource:pp_action_2_opp | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=10 | turn=8 | from_phase:forced_switch_required | to_phase:forced_switch_required | trigger:own_faint | type:SubGoalTransition\nstep=11 | turn=9 | resource:pp_action_3_opp | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=13 | turn=9 | resource:pp_action_2_own | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=14 | turn=9 | resource:pp_action_1_opp | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=15 | turn=9 | from_phase:vs_unit_D | to_phase:vs_unit_C | trigger:opponent_switch | type:SubGoalTransition\n\n=== unit_D ===\nstep=3 | turn=7 | tool:unit_D | state:unavailable | recover_in:0 | type:ToolAvailability\nstep=4 | turn=7 | resource:hp_unit_D | amount:0.25 | decay:none | recover_in:null | type:ResourceBudget\n\n=== unit_B ===\nstep=7 | turn=8 | resource:hp_unit_B | amount:0.0 | decay:none | recover_in:null | type:ResourceBudget\n\n=== info ===\nstep=9 | turn=8 | observable_added:[unit_D] | observable_removed:[] | uncertainty:0.5 | type:InformationState\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 45,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

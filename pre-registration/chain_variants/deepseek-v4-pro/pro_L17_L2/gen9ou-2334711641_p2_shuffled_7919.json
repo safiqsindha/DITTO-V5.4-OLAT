@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L17_L2",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2334711641_p2_shuffled_7919",
+  "lever_varied": 17,
+  "level_varied": "L2",
+  "lever": 17,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 2 (turn=0):\n  ResourceBudget: hp_unit_D at 25.0%\nStep 3 (turn=0):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 4 (turn=0):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 5 (turn=1):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\nStep 6 (turn=1):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 7 (turn=1):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 8 (turn=1):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease)\nStep 9 (turn=1):\n  ResourceBudget: hp_unit_C at 75.0%\nStep 10 (turn=1):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 11 (turn=2):\n  ResourceBudget: pp_action_1_own at 87.5% (decay=monotone_decrease)\nStep 12 (turn=2):\n  ResourceBudget: hp_unit_A at 75.0%\nStep 13 (turn=2):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 14 (turn=2):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 15 (turn=2):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO. Respond in the format: Answer: YES or NO, Rule: <rule violated or none>.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 64,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "causal_incoherence",
+  "assignment_index": 16,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

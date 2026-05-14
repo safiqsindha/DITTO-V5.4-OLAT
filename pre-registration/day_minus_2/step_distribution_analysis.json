@@ -1,0 +1,101 @@
+{
+  "generated": "2026-05-12",
+  "sample_size": {
+    "total": 250,
+    "violated": 182,
+    "intact": 68,
+    "violated_with_step_data": 169,
+    "violated_blank_step": 13
+  },
+  "overall_step_stats": {
+    "min": 4,
+    "max": 40,
+    "median": 14,
+    "mean": 17.80473372781065,
+    "p25": 11.0,
+    "p75": 24.5
+  },
+  "coverage_by_k": {
+    "3": {
+      "visible": 0,
+      "fraction": 0.0,
+      "invisible": 169
+    },
+    "5": {
+      "visible": 6,
+      "fraction": 0.03550295857988166,
+      "invisible": 163
+    },
+    "8": {
+      "visible": 20,
+      "fraction": 0.11834319526627218,
+      "invisible": 149
+    },
+    "12": {
+      "visible": 56,
+      "fraction": 0.33136094674556216,
+      "invisible": 113
+    },
+    "20": {
+      "visible": 118,
+      "fraction": 0.6982248520710059,
+      "invisible": 51
+    }
+  },
+  "by_violation_type": {
+    "causal_incoherence": {
+      "n": 29,
+      "min": 4,
+      "median": 30,
+      "mean": 26.17241379310345,
+      "max": 39,
+      "visible_at_k5": 1,
+      "visible_at_k5_fraction": 0.034482758620689655
+    },
+    "dead_unit_returns": {
+      "n": 2,
+      "min": 21,
+      "median": 22.5,
+      "mean": 22.5,
+      "max": 24,
+      "visible_at_k5": 0,
+      "visible_at_k5_fraction": 0.0
+    },
+    "faint_no_permanence": {
+      "n": 2,
+      "min": 13,
+      "median": 22.0,
+      "mean": 22,
+      "max": 31,
+      "visible_at_k5": 0,
+      "visible_at_k5_fraction": 0.0
+    },
+    "hp_resurrection": {
+      "n": 20,
+      "min": 10,
+      "median": 26.5,
+      "mean": 24,
+      "max": 35,
+      "visible_at_k5": 0,
+      "visible_at_k5_fraction": 0.0
+    },
+    "monotone_increase": {
+      "n": 8,
+      "min": 6,
+      "median": 22.0,
+      "mean": 21.25,
+      "max": 40,
+      "visible_at_k5": 0,
+      "visible_at_k5_fraction": 0.0
+    },
+    "multiple": {
+      "n": 108,
+      "min": 4,
+      "median": 14.0,
+      "mean": 13.99074074074074,
+      "max": 38,
+      "visible_at_k5": 5,
+      "visible_at_k5_fraction": 0.046296296296296294
+    }
+  }
+}

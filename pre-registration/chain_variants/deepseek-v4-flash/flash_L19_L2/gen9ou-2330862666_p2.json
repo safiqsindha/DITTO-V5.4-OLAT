@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L19_L2",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2330862666_p2",
+  "lever_varied": 19,
+  "level_varied": "L2",
+  "lever": 19,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "Base your answer on the events shown in the chain.\n\nStep 1 (turn=0):\n  SubGoalTransition: phase shifted from 'initial' to 'vs_unit_A' (trigger=opponent_switch)\nStep 2 (turn=0):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 3 (turn=0):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 4 (turn=0):\n  OptimizationCriterion: objective=weather_snowscape weight_shift=unknown_weather_shift\nStep 5 (turn=1):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 6 (turn=1):\n  CoordinationDependency: field_side_p2 depends on hazard_move:auroraveil -> expected_action=hazard_response\nStep 7 (turn=1):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 8 (turn=1):\n  OptimizationCriterion: objective=field_move:trickroom weight_shift=field_move:trickroom_shift\nStep 9 (turn=1):\n  OptimizationCriterion: objective=weather_snowscape weight_shift=unknown_weather_shift\nStep 10 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 11 (turn=2):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 12 (turn=2):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 13 (turn=2):\n  OptimizationCriterion: objective=field_move:psychicterrain weight_shift=field_move:psychicterrain_shift\nStep 14 (turn=2):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 15 (turn=2):\n  ResourceBudget: hp_unit_B at 75.0%\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 0,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

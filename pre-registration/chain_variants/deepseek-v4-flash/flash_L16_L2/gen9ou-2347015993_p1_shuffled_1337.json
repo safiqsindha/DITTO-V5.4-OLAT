@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L16_L2",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2347015993_p1_shuffled_1337",
+  "lever_varied": 16,
+  "level_varied": "L2",
+  "lever": 16,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "Pokemon battles follow specific rules that govern what each Pokemon can and cannot do. Each move has a limited number of uses (PP); once a move's PP reaches zero, that move cannot be used again. A Pokemon that has fainted cannot take any action for the remainder of the battle. Each Pokemon can only use moves that belong to its specific moveset \u2014 moves from other Pokemon's movesets are not available. Certain status conditions also restrict what a Pokemon can do: a sleeping or frozen Pokemon cannot use moves, and a fully paralyzed Pokemon may be prevented from acting entirely.\n\nStep 1 (turn=15):\n  ResourceBudget: hp_unit_E at 75.0%\nStep 2 (turn=15):\n  ToolAvailability: unit_D is now UNAVAILABLE (permanent)\nStep 3 (turn=15):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 4 (turn=15):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 5 (turn=15):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 6 (turn=16):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 7 (turn=16):\n  ResourceBudget: match_time_remaining at 66.7% (decay=monotone_decrease)\nStep 8 (turn=16):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\nStep 9 (turn=17):\n  ResourceBudget: hp_unit_D at 100.0%\nStep 10 (turn=17):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 11 (turn=17):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent)\nStep 12 (turn=17):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 13 (turn=17):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 14 (turn=17):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 15 (turn=17):\n  ResourceBudget: pp_action_2_opp at 87.5% (decay=monotone_decrease)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 18,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L04_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2343602002_p1_shuffled_7919",
+  "lever_varied": 4,
+  "level_varied": "L3",
+  "lever": 4,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "# Constraint chain (perspective=p1)\nStep 1 (turn=0):\n  ResourceBudget: hp_unit_A at 75.0% (decay=none) [hp_fraction=0.750, fainted=False]\nStep 2 (turn=0):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease) [pp_remaining=93.8%, total_uses=1, last_seen_step=2]\nStep 3 (turn=0):\n  ToolAvailability: unit_C is now UNAVAILABLE (permanent) [available=False, permanently_fainted=True]\nStep 4 (turn=1):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent) [available=False, permanently_fainted=True]\nStep 5 (turn=1):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0) [available=False, permanently_fainted=False]\nStep 6 (turn=1):\n  ResourceBudget: hp_unit_A at 75.0% (decay=none) [hp_fraction=0.750, fainted=False]\nStep 7 (turn=1):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0) [available=False, permanently_fainted=False]\nStep 8 (turn=1):\n  ToolAvailability: unit_D is now AVAILABLE [available=True, permanently_fainted=False]\nStep 9 (turn=1):\n  ResourceBudget: hp_unit_A at 0.0% (decay=none) [hp_fraction=0.000, fainted=False]\nStep 10 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0) [available=False, permanently_fainted=True]\nStep 11 (turn=2):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease) [pp_remaining=93.8%, total_uses=1, last_seen_step=11]\nStep 12 (turn=2):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_C' (trigger=opponent_switch)\nStep 13 (turn=2):\n  ResourceBudget: hp_unit_D at 50.0% (decay=none) [hp_fraction=0.500, fainted=False]\nStep 14 (turn=3):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease) [pp_remaining=93.8%, total_uses=1, last_seen_step=14]\nStep 15 (turn=3):\n  ResourceBudget: hp_unit_A at 100.0% (decay=none) [hp_fraction=1.000, fainted=False]\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 7,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

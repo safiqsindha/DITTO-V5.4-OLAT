@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L04_L3",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2310254076_p2_shuffled_42",
+  "lever_varied": 4,
+  "level_varied": "L3",
+  "lever": 4,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "# Constraint chain (perspective=p2)\nStep 1 (turn=6):\n  ResourceBudget: hp_unit_C at 25.0% (decay=none) [hp_fraction=0.250, fainted=False]\nStep 2 (turn=6):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_D' (trigger=opponent_switch)\nStep 3 (turn=7):\n  ToolAvailability: unit_D is now UNAVAILABLE (recover_in=0) [available=False, permanently_fainted=False]\nStep 4 (turn=7):\n  ResourceBudget: hp_unit_D at 25.0% (decay=none) [hp_fraction=0.250, fainted=False]\nStep 5 (turn=7):\n  ResourceBudget: pp_action_2_opp at 87.5% (decay=monotone_decrease) [pp_remaining=87.5%, total_uses=1, last_seen_step=5]\nStep 6 (turn=7):\n  ResourceBudget: hp_unit_C at 75.0% (decay=none) [hp_fraction=0.750, fainted=False]\nStep 7 (turn=8):\n  ResourceBudget: hp_unit_B at 0.0% (decay=none) [hp_fraction=0.000, fainted=False]\nStep 8 (turn=8):\n  ToolAvailability: unit_C is now AVAILABLE [available=True, permanently_fainted=False]\nStep 9 (turn=8):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\nStep 10 (turn=8):\n  SubGoalTransition: phase shifted from 'forced_switch_required' to 'forced_switch_required' (trigger=own_faint)\nStep 11 (turn=9):\n  ResourceBudget: pp_action_3_opp at 93.8% (decay=monotone_decrease) [pp_remaining=93.8%, total_uses=1, last_seen_step=11]\nStep 12 (turn=9):\n  ResourceBudget: hp_unit_C at 25.0% (decay=none) [hp_fraction=0.250, fainted=False]\nStep 13 (turn=9):\n  ResourceBudget: pp_action_2_own at 87.5% (decay=monotone_decrease) [pp_remaining=87.5%, total_uses=1, last_seen_step=13]\nStep 14 (turn=9):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease) [pp_remaining=87.5%, total_uses=1, last_seen_step=14]\nStep 15 (turn=9):\n  SubGoalTransition: phase shifted from 'vs_unit_D' to 'vs_unit_C' (trigger=opponent_switch)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 45,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

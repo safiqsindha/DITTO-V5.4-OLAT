@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L15_L1",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2301379516_p1_shuffled_42",
+  "lever_varied": 15,
+  "level_varied": "L1",
+  "lever": 15,
+  "level": "L1",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=7):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 2 (turn=7):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 3 (turn=7):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 4 (turn=7):\n  ResourceBudget: hp_unit_B at 50.0%\nStep 5 (turn=7):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 6 (turn=8):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 7 (turn=8):\n  ResourceBudget: hp_unit_A at 75.0%\nStep 8 (turn=8):\n  ResourceBudget: hp_unit_B at 25.0%\nStep 9 (turn=8):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 10 (turn=8):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 11 (turn=8):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 12 (turn=8):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_C' (trigger=opponent_switch)\nStep 13 (turn=9):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 14 (turn=9):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 15 (turn=9):\n  ToolAvailability: unit_A is now AVAILABLE\n\nRate how consistent this chain is on a scale of 1\u201310.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 33,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

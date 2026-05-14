@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L09_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2273536349_p1",
+  "lever_varied": 9,
+  "level_varied": "L3",
+  "lever": 9,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "=== unit_E ===\nstep=1 | turn=8 | tool:unit_E | state:unavailable | recover_in:0 | type:ToolAvailability\nstep=6 | turn=9 | tool:unit_E | state:unavailable | recover_in:0 | type:ToolAvailability\n\n=== unit_A ===\nstep=2 | turn=8 | tool:unit_A | state:available | recover_in:null | type:ToolAvailability\n\n=== unit_D ===\nstep=3 | turn=8 | tool:unit_D | state:unavailable | recover_in:0 | type:ToolAvailability\n\n=== own ===\nstep=4 | turn=8 | from_phase:vs_unit_D | to_phase:vs_unit_E | trigger:opponent_switch | type:SubGoalTransition\nstep=7 | turn=9 | from_phase:vs_unit_E | to_phase:vs_unit_F | trigger:opponent_switch | type:SubGoalTransition\nstep=9 | turn=9 | resource:pp_action_2_own | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=11 | turn=10 | resource:match_time_remaining | amount:0.8333 | decay:monotone_decrease | recover_in:null | type:ResourceBudget\nstep=14 | turn=10 | from_phase:vs_unit_F | to_phase:vs_unit_B | trigger:opponent_switch | type:SubGoalTransition\n\n=== info ===\nstep=5 | turn=8 | observable_added:[unit_E] | observable_removed:[] | uncertainty:0.5 | type:InformationState\nstep=8 | turn=9 | observable_added:[unit_F] | observable_removed:[] | uncertainty:0.5 | type:InformationState\nstep=15 | turn=10 | observable_added:[unit_B] | observable_removed:[] | uncertainty:0.5 | type:InformationState\n\n=== unit_F ===\nstep=10 | turn=9 | resource:hp_unit_F | amount:0.5 | decay:none | recover_in:null | type:ResourceBudget\nstep=12 | turn=10 | tool:unit_F | state:unavailable | recover_in:0 | type:ToolAvailability\n\n=== unit_B ===\nstep=13 | turn=10 | tool:unit_B | state:available | recover_in:null | type:ToolAvailability\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 17,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

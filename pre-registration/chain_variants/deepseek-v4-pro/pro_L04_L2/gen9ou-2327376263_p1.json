@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L04_L2",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2327376263_p1",
+  "lever_varied": 4,
+  "level_varied": "L2",
+  "lever": 4,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "# Constraint chain (perspective=p1)\nStep 1 (turn=6):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 2 (turn=6):\n  ResourceBudget: hp_unit_A at 100.0% (decay=none)\nStep 3 (turn=6):\n  ToolAvailability: unit_D is now UNAVAILABLE (recover_in=0)\nStep 4 (turn=6):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 5 (turn=6):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 6 (turn=7):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 7 (turn=7):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 8 (turn=7):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease)\nStep 9 (turn=7):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 10 (turn=8):\n  ResourceBudget: pp_action_3_opp at 93.8% (decay=monotone_decrease)\nStep 11 (turn=8):\n  ResourceBudget: hp_unit_C at 0.0% (decay=none) (C has fainted)\nStep 12 (turn=8):\n  ToolAvailability: unit_C is now UNAVAILABLE (permanent) (unit_C has permanently fainted)\nStep 13 (turn=8):\n  SubGoalTransition: phase shifted from 'forced_switch_required' to 'forced_switch_required' (trigger=own_faint)\nStep 14 (turn=8):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 15 (turn=8):\n  ToolAvailability: unit_D is now AVAILABLE\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 6,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

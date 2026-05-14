@@ -1,0 +1,4994 @@
+{
+  "flash_L01_L1_L1": {
+    "condition_id": "flash_L01_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L01_L3_L1": {
+    "condition_id": "flash_L01_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L02_L2_L1": {
+    "condition_id": "flash_L02_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L03_L2_L1": {
+    "condition_id": "flash_L03_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L2_L1": {
+    "condition_id": "flash_L04_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L3_L1": {
+    "condition_id": "flash_L04_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L1_L1": {
+    "condition_id": "flash_L08_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L2_L1": {
+    "condition_id": "flash_L08_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L4_L1": {
+    "condition_id": "flash_L08_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L5_L1": {
+    "condition_id": "flash_L08_L5",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L2_L1": {
+    "condition_id": "flash_L09_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L3_L1": {
+    "condition_id": "flash_L09_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0147,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L2_L1": {
+    "condition_id": "flash_L11_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L3_L1": {
+    "condition_id": "flash_L11_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L2_L1": {
+    "condition_id": "flash_L12_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L3_L1": {
+    "condition_id": "flash_L12_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L13_L2_L1": {
+    "condition_id": "flash_L13_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L1_L1": {
+    "condition_id": "flash_L15_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0147,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L3_L1": {
+    "condition_id": "flash_L15_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0919,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L2_L1": {
+    "condition_id": "flash_L16_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L3_L1": {
+    "condition_id": "flash_L16_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L2_L1": {
+    "condition_id": "flash_L17_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0515,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0515,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1443,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L3_L1": {
+    "condition_id": "flash_L17_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3447,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L2_L1": {
+    "condition_id": "flash_L18_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1949,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1618,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.4572,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.1071428571428571, \"Q3\": 0.20833333333333337, \"Q4\": 0.5}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L3_L1": {
+    "condition_id": "flash_L18_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0074,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0368,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2174,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.1428571428571429, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L4_L1": {
+    "condition_id": "flash_L18_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L2_L1": {
+    "condition_id": "flash_L19_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L3_L1": {
+    "condition_id": "flash_L19_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0441,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0441,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0992,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L22_L2_L1": {
+    "condition_id": "flash_L22_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L2_L1": {
+    "condition_id": "flash_L24_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L3_L1": {
+    "condition_id": "flash_L24_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_baseline_L1": {
+    "condition_id": "flash_baseline",
+    "model": "deepseek-v4-flash",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L1_L1": {
+    "condition_id": "pro_L01_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0809,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0956,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2187,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L3_L1": {
+    "condition_id": "pro_L01_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0257,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0551,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1054,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L02_L2_L1": {
+    "condition_id": "pro_L02_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": -0.1287,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": -0.114,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": -0.3206,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L03_L2_L1": {
+    "condition_id": "pro_L03_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0478,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0478,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1146,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L2_L1": {
+    "condition_id": "pro_L04_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0735,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0588,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1414,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L3_L1": {
+    "condition_id": "pro_L04_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": -0.0993,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.1305,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": -0.2827,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L1_L1": {
+    "condition_id": "pro_L08_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1041,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L2_L1": {
+    "condition_id": "pro_L08_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0882,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0882,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2972,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L4_L1": {
+    "condition_id": "pro_L08_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L5_L1": {
+    "condition_id": "pro_L08_L5",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L2_L1": {
+    "condition_id": "pro_L09_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0993,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0846,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.2322,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L3_L1": {
+    "condition_id": "pro_L09_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0221,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0239,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.0432,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L2_L1": {
+    "condition_id": "pro_L11_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.2022,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1085,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.1505,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L3_L1": {
+    "condition_id": "pro_L11_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.1581,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": -0.0864,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1258,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L2_L1": {
+    "condition_id": "pro_L12_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0257,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L3_L1": {
+    "condition_id": "pro_L12_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1287,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1287,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.7381,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L13_L2_L1": {
+    "condition_id": "pro_L13_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1132,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L1_L1": {
+    "condition_id": "pro_L15_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0184,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L3_L1": {
+    "condition_id": "pro_L15_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.046,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L2_L1": {
+    "condition_id": "pro_L16_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L3_L1": {
+    "condition_id": "pro_L16_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.046,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L2_L1": {
+    "condition_id": "pro_L17_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.261,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.261,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.6259,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L3_L1": {
+    "condition_id": "pro_L17_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.239,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.239,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 1.0283,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L2_L1": {
+    "condition_id": "pro_L18_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.3051,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.3051,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.6288,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.05714285714285716, \"Q3\": 0.11111111111111116, \"Q4\": 0.38888888888888884}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L3_L1": {
+    "condition_id": "pro_L18_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.364,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.364,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.758,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.025000000000000022, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.5666666666666667}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L4_L1": {
+    "condition_id": "pro_L18_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L2_L1": {
+    "condition_id": "pro_L19_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1041,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L3_L1": {
+    "condition_id": "pro_L19_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0349,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3957,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L22_L2_L1": {
+    "condition_id": "pro_L22_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.0071,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L2_L1": {
+    "condition_id": "pro_L24_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L3_L1": {
+    "condition_id": "pro_L24_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0588,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0588,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2103,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_baseline_L1": {
+    "condition_id": "pro_baseline",
+    "model": "deepseek-v4-pro",
+    "universe": "L1",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L01_L1_L2": {
+    "condition_id": "flash_L01_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L01_L3_L2": {
+    "condition_id": "flash_L01_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L02_L2_L2": {
+    "condition_id": "flash_L02_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L03_L2_L2": {
+    "condition_id": "flash_L03_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L2_L2": {
+    "condition_id": "flash_L04_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L3_L2": {
+    "condition_id": "flash_L04_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L1_L2": {
+    "condition_id": "flash_L08_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L2_L2": {
+    "condition_id": "flash_L08_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L4_L2": {
+    "condition_id": "flash_L08_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L5_L2": {
+    "condition_id": "flash_L08_L5",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L2_L2": {
+    "condition_id": "flash_L09_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L3_L2": {
+    "condition_id": "flash_L09_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0147,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L2_L2": {
+    "condition_id": "flash_L11_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L3_L2": {
+    "condition_id": "flash_L11_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L2_L2": {
+    "condition_id": "flash_L12_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L3_L2": {
+    "condition_id": "flash_L12_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L13_L2_L2": {
+    "condition_id": "flash_L13_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L1_L2": {
+    "condition_id": "flash_L15_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0147,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L3_L2": {
+    "condition_id": "flash_L15_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0919,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L2_L2": {
+    "condition_id": "flash_L16_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L3_L2": {
+    "condition_id": "flash_L16_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L2_L2": {
+    "condition_id": "flash_L17_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0515,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0515,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1443,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L3_L2": {
+    "condition_id": "flash_L17_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3447,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L2_L2": {
+    "condition_id": "flash_L18_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1949,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1618,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.4572,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.1071428571428571, \"Q3\": 0.20833333333333337, \"Q4\": 0.5}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L3_L2": {
+    "condition_id": "flash_L18_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0074,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0368,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2174,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.1428571428571429, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L4_L2": {
+    "condition_id": "flash_L18_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L2_L2": {
+    "condition_id": "flash_L19_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L3_L2": {
+    "condition_id": "flash_L19_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0441,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0441,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0992,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L22_L2_L2": {
+    "condition_id": "flash_L22_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L2_L2": {
+    "condition_id": "flash_L24_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L3_L2": {
+    "condition_id": "flash_L24_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_baseline_L2": {
+    "condition_id": "flash_baseline",
+    "model": "deepseek-v4-flash",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L1_L2": {
+    "condition_id": "pro_L01_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0809,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0956,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2187,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L3_L2": {
+    "condition_id": "pro_L01_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0257,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0551,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1054,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L02_L2_L2": {
+    "condition_id": "pro_L02_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": -0.1287,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": -0.114,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": -0.3206,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L03_L2_L2": {
+    "condition_id": "pro_L03_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0478,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0478,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1146,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L2_L2": {
+    "condition_id": "pro_L04_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0735,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0588,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1414,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L3_L2": {
+    "condition_id": "pro_L04_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": -0.0993,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.1305,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": -0.2827,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L1_L2": {
+    "condition_id": "pro_L08_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1041,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L2_L2": {
+    "condition_id": "pro_L08_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0882,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0882,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2972,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L4_L2": {
+    "condition_id": "pro_L08_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L5_L2": {
+    "condition_id": "pro_L08_L5",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L2_L2": {
+    "condition_id": "pro_L09_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0993,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0846,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.2322,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L3_L2": {
+    "condition_id": "pro_L09_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0221,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0239,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.0432,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L2_L2": {
+    "condition_id": "pro_L11_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.2022,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1085,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.1505,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L3_L2": {
+    "condition_id": "pro_L11_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.1581,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": -0.0864,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1258,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L2_L2": {
+    "condition_id": "pro_L12_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0257,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L3_L2": {
+    "condition_id": "pro_L12_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1287,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1287,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.7381,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L13_L2_L2": {
+    "condition_id": "pro_L13_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1132,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L1_L2": {
+    "condition_id": "pro_L15_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0184,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L3_L2": {
+    "condition_id": "pro_L15_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.046,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L2_L2": {
+    "condition_id": "pro_L16_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L3_L2": {
+    "condition_id": "pro_L16_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.046,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0154,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L2_L2": {
+    "condition_id": "pro_L17_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.261,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.261,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.6259,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L3_L2": {
+    "condition_id": "pro_L17_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.239,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.239,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 1.0283,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L2_L2": {
+    "condition_id": "pro_L18_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.3051,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.3051,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.6288,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.05714285714285716, \"Q3\": 0.11111111111111116, \"Q4\": 0.38888888888888884}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L3_L2": {
+    "condition_id": "pro_L18_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.364,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.364,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.758,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.025000000000000022, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.5666666666666667}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L4_L2": {
+    "condition_id": "pro_L18_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0037,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L2_L2": {
+    "condition_id": "pro_L19_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0331,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1041,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L3_L2": {
+    "condition_id": "pro_L19_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0331,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0349,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3957,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L22_L2_L2": {
+    "condition_id": "pro_L22_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0037,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.0071,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L2_L2": {
+    "condition_id": "pro_L24_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0294,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.1453,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L3_L2": {
+    "condition_id": "pro_L24_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0588,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0588,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2103,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_baseline_L2": {
+    "condition_id": "pro_baseline",
+    "model": "deepseek-v4-pro",
+    "universe": "L2",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L01_L1_L3": {
+    "condition_id": "flash_L01_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L01_L3_L3": {
+    "condition_id": "flash_L01_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L02_L2_L3": {
+    "condition_id": "flash_L02_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L03_L2_L3": {
+    "condition_id": "flash_L03_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L2_L3": {
+    "condition_id": "flash_L04_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L04_L3_L3": {
+    "condition_id": "flash_L04_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L1_L3": {
+    "condition_id": "flash_L08_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L2_L3": {
+    "condition_id": "flash_L08_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L4_L3": {
+    "condition_id": "flash_L08_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L08_L5_L3": {
+    "condition_id": "flash_L08_L5",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L2_L3": {
+    "condition_id": "flash_L09_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L09_L3_L3": {
+    "condition_id": "flash_L09_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0156,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L2_L3": {
+    "condition_id": "flash_L11_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L11_L3_L3": {
+    "condition_id": "flash_L11_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L2_L3": {
+    "condition_id": "flash_L12_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L12_L3_L3": {
+    "condition_id": "flash_L12_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L13_L2_L3": {
+    "condition_id": "flash_L13_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L1_L3": {
+    "condition_id": "flash_L15_L1",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0156,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L15_L3_L3": {
+    "condition_id": "flash_L15_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0868,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L2_L3": {
+    "condition_id": "flash_L16_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L16_L3_L3": {
+    "condition_id": "flash_L16_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L2_L3": {
+    "condition_id": "flash_L17_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0104,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0104,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0283,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L17_L3_L3": {
+    "condition_id": "flash_L17_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0312,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0312,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3554,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L2_L3": {
+    "condition_id": "flash_L18_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.2396,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.2153,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.68,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.033333333333333326, \"Q3\": 0.5, \"Q4\": 0.5}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L3_L3": {
+    "condition_id": "flash_L18_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0139,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0174,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1574,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.125, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L18_L4_L3": {
+    "condition_id": "flash_L18_L4",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L2_L3": {
+    "condition_id": "flash_L19_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L19_L3_L3": {
+    "condition_id": "flash_L19_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0035,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0035,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0077,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L22_L2_L3": {
+    "condition_id": "flash_L22_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L2_L3": {
+    "condition_id": "flash_L24_L2",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_L24_L3_L3": {
+    "condition_id": "flash_L24_L3",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "flash_baseline_L3": {
+    "condition_id": "flash_baseline",
+    "model": "deepseek-v4-flash",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L1_L3": {
+    "condition_id": "pro_L01_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1944,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.2101,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.6212,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L01_L3_L3": {
+    "condition_id": "pro_L01_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.125,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1128,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.4506,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L02_L2_L3": {
+    "condition_id": "pro_L02_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0174,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0017,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0773,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L03_L2_L3": {
+    "condition_id": "pro_L03_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1701,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1701,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.5289,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L2_L3": {
+    "condition_id": "pro_L04_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0521,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0677,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2797,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L04_L3_L3": {
+    "condition_id": "pro_L04_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0139,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0139,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1241,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L1_L3": {
+    "condition_id": "pro_L08_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2669,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L2_L3": {
+    "condition_id": "pro_L08_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1806,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.1806,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.6611,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L4_L3": {
+    "condition_id": "pro_L08_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0556,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0556,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2038,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L08_L5_L3": {
+    "condition_id": "pro_L08_L5",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0556,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0556,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2038,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L2_L3": {
+    "condition_id": "pro_L09_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0139,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0295,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.169,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L09_L3_L3": {
+    "condition_id": "pro_L09_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0451,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0417,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.064,
+      "classification": "Directional(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L2_L3": {
+    "condition_id": "pro_L11_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.3125,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.2292,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.5968,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L11_L3_L3": {
+    "condition_id": "pro_L11_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0382,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0764,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3693,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L2_L3": {
+    "condition_id": "pro_L12_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.0938,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.125,
+      "classification": "Directional"
+    },
+    "s3_arcsine": {
+      "effect": 0.3922,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L12_L3_L3": {
+    "condition_id": "pro_L12_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.191,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.191,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 1.0039,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L13_L2_L3": {
+    "condition_id": "pro_L13_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0312,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0312,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.1499,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L1_L3": {
+    "condition_id": "pro_L15_L1",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional(no_CI)",
+    "s1_as_no": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0955,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3243,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L15_L3_L3": {
+    "condition_id": "pro_L15_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional(no_CI)",
+    "s1_as_no": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0434,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3243,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L2_L3": {
+    "condition_id": "pro_L16_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional(no_CI)",
+    "s1_as_no": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.099,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3243,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L16_L3_L3": {
+    "condition_id": "pro_L16_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional(no_CI)",
+    "s1_as_no": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.1302,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.3243,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L2_L3": {
+    "condition_id": "pro_L17_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.2882,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.2882,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.8013,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L17_L3_L3": {
+    "condition_id": "pro_L17_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.2431,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.2431,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.8218,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L2_L3": {
+    "condition_id": "pro_L18_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.3785,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.3785,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.9327,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.125, \"Q3\": 0.11111111111111116, \"Q4\": 0.275}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L3_L3": {
+    "condition_id": "pro_L18_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Meaningful",
+    "s1_as_no": {
+      "effect": 0.3542,
+      "classification": "Meaningful"
+    },
+    "s2_as_random": {
+      "effect": 0.3542,
+      "classification": "Meaningful"
+    },
+    "s3_arcsine": {
+      "effect": 0.8884,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.2142857142857143, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.38888888888888884}}",
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L18_L4_L3": {
+    "condition_id": "pro_L18_L4",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Unknown",
+    "s1_as_no": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0799,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L2_L3": {
+    "condition_id": "pro_L19_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0243,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0243,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.0115,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L19_L3_L3": {
+    "condition_id": "pro_L19_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Directional",
+    "s1_as_no": {
+      "effect": 0.1111,
+      "classification": "Directional"
+    },
+    "s2_as_random": {
+      "effect": 0.066,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.719,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": true,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L22_L2_L3": {
+    "condition_id": "pro_L22_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0938,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0938,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.3673,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L2_L3": {
+    "condition_id": "pro_L24_L2",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": -0.0312,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": -0.0312,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": -0.3554,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_L24_L3_L3": {
+    "condition_id": "pro_L24_L3",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0625,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.2669,
+      "classification": "Meaningful(no_CI)"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  },
+  "pro_baseline_L3": {
+    "condition_id": "pro_baseline",
+    "model": "deepseek-v4-pro",
+    "universe": "L3",
+    "primary_classification": "Null",
+    "s1_as_no": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s2_as_random": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s3_arcsine": {
+      "effect": 0.0,
+      "classification": "Null"
+    },
+    "s4_parser_strict": {
+      "effect": null,
+      "classification": "Unknown"
+    },
+    "s5_parse_fail_flagged": false,
+    "s6_quartile": null,
+    "robustness_concern": false,
+    "hidden_signal_candidate": false
+  }
+}

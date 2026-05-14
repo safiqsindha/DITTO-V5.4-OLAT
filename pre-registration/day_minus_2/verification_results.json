@@ -1,0 +1,47 @@
+{
+  "generated": "2026-05-12",
+  "spec_hash": "9ab2e9484fe8837d687a952d132fa07ca771fc37bcd5e5774f1adee91ebefe6c",
+  "config": {
+    "model": "deepseek-v4-flash",
+    "endpoint": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "cutoff_k": 15,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "lever_15_interpretation": "L2 (YES/NO) \u2014 see day_minus_2.py docstring",
+    "question_text": "Does this battle chain contain any rule violations?",
+    "output_anchor": "The answer is YES or NO."
+  },
+  "metrics": {
+    "n_attempted": 250,
+    "n_valid": 250,
+    "errors": 0,
+    "unparseable": 0,
+    "parse_failure_rate": 0.0,
+    "parse_stage_breakdown": {
+      "first_token": 250
+    },
+    "n_intact": 68,
+    "n_violated": 182,
+    "detection_rate_intact": 1.0,
+    "detection_rate_violated": 0.0,
+    "gap": -1.0,
+    "cohens_h": -3.141588653500895,
+    "ci_95_gap": [
+      -1.0,
+      -1.0
+    ],
+    "yes_rate_among_parsed": 0.0,
+    "no_rate_among_parsed": 1.0
+  },
+  "scenarios_triggered": [
+    "S2 (anti-detection): gap < -0.05",
+    "S5 (degenerate output)"
+  ],
+  "proceed_recommendation": false,
+  "elapsed_s_total": 50.7
+}

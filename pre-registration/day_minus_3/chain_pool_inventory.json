@@ -1,0 +1,56 @@
+{
+  "generated": "2026-05-12",
+  "spec_hash": "9ab2e9484fe8837d687a952d132fa07ca771fc37bcd5e5774f1adee91ebefe6c",
+  "sources": {
+    "verdicts_csv": "/Users/safiqsindha/Desktop/Project Ditto/Ditto-5.3- Pokemon Diag/pokemon-v1-symbolic/outputs/phase3_results_v4.csv",
+    "real_chains_dir": "/Users/safiqsindha/Desktop/Project Ditto/Ditto V1/chains/real_v2",
+    "shuffled_chains_dir": "/Users/safiqsindha/Desktop/Project Ditto/Ditto V1/chains/shuffled_v2"
+  },
+  "totals": {
+    "verdicts_loaded": 19428,
+    "eligible": 19428,
+    "excluded": 0,
+    "real_eligible": 4857,
+    "shuffled_eligible": 14571
+  },
+  "violation_type_distribution": {
+    "none": 6503,
+    "dead_unit_returns": 169,
+    "multiple": 8386,
+    "monotone_increase": 437,
+    "double_availability": 45,
+    "causal_incoherence": 2797,
+    "hp_resurrection": 941,
+    "faint_no_permanence": 150
+  },
+  "o7_paralysis_filter": {
+    "result": "PASS",
+    "note": "No paralysis-related violation_type in eligible pool. Symbolic checker has no PARA rule; assertion is structural.",
+    "paralysis_like_tokens_searched": [
+      "fully_paralyzed",
+      "para",
+      "para_violation",
+      "paralysis"
+    ]
+  },
+  "lever_5_l1_sample": {
+    "n": 250,
+    "seed": 42,
+    "real_count": 68,
+    "shuffled_count": 182,
+    "violation_type_distribution": {
+      "none": 81,
+      "multiple": 108,
+      "causal_incoherence": 29,
+      "hp_resurrection": 20,
+      "monotone_increase": 8,
+      "dead_unit_returns": 2,
+      "faint_no_permanence": 2
+    },
+    "sample_path": "/Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_3/verification_n250_sample.jsonl"
+  },
+  "checker_recall_caveat": {
+    "false_negative_shuffled_chains": 1659,
+    "note": "Ground truth for Lever 24 L1 derives from chain_id pattern, not symbolic checker verdict. These FNs are still 'violated' ground truth."
+  }
+}

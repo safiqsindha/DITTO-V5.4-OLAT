@@ -1,0 +1,31 @@
+{
+  "condition_id": "flash_L12_L2",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2270600845_p1_shuffled_7919",
+  "lever_varied": 12,
+  "level_varied": "L2",
+  "lever": 12,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  ResourceBudget: hp_unit_A at 100.0%\nStep 2 (turn=0):\n  ResourceBudget: pp_action_3_own at 87.5% (decay=monotone_decrease)\nStep 3 (turn=0):\n  ResourceBudget: hp_unit_B at 100.0%\nStep 4 (turn=1):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease)\nStep 5 (turn=1):\n  ResourceBudget: hp_unit_A at 50.0%\nStep 6 (turn=1):\n  ResourceBudget: hp_unit_A at 75.0%\nStep 7 (turn=1):\n  ToolAvailability: unit_B is now UNAVAILABLE (permanent)\nStep 8 (turn=2):\n  OptimizationCriterion: objective=field_move:trickroom weight_shift=field_move:trickroom_shift\nStep 9 (turn=2):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 10 (turn=2):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\nStep 11 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 12 (turn=3):\n  ResourceBudget: pp_action_2_own at 81.2% (decay=monotone_decrease)\nStep 13 (turn=3):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 14 (turn=3):\n  ResourceBudget: pp_action_2_own at 87.5% (decay=monotone_decrease)\nStep 15 (turn=3):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 128,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "monotone_increase",
+  "assignment_index": 19,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

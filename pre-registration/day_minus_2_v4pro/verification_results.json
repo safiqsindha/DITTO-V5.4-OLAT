@@ -1,0 +1,50 @@
+{
+  "task": "Task 2 \u2014 V4-Pro Day -2 Verification at n=250",
+  "date": "2026-05-12",
+  "config": {
+    "model": "deepseek-v4-pro",
+    "endpoint": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "cutoff_k": 15,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "parser": "v2 4-stage cascade"
+  },
+  "metrics": {
+    "n_attempted": 250,
+    "n_valid": 246,
+    "errors": 0,
+    "unparseable": 4,
+    "parse_failure_rate": 0.016,
+    "parse_stage_breakdown": {
+      "last_token": 243,
+      "unparseable": 4,
+      "strict": 3
+    },
+    "finish_reason_distribution": {
+      "stop": 244,
+      "length": 6
+    },
+    "mean_completion_tokens": 1.864,
+    "n_intact": 68,
+    "n_violated": 178,
+    "detection_rate_intact_correctness": 0.8970588235294118,
+    "detection_rate_violated_correctness": 0.1404494382022472,
+    "gap_spec_convention": -0.7566093853271646,
+    "cohens_h": -1.7200623259603818,
+    "ci_95_gap": [
+      -0.8379048248512889,
+      -0.6675479180436219
+    ],
+    "yes_rate_parsed": 0.13008130081300814,
+    "no_rate_parsed": 0.8699186991869918
+  },
+  "scenarios_triggered": [
+    "S2 (anti-detection): gap=-0.7566 < -0.05"
+  ],
+  "elapsed_s_total": 77.08
+}

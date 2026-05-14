@@ -1,0 +1,41 @@
+{
+  "task": "Task 1 \u2014 re-parse Day -2 V4-Flash with v2 4-stage cascade",
+  "date": "2026-05-12",
+  "input": "/Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_2/raw_responses.ndjson",
+  "config_reference": "V4-Flash, V1-minimal, k=15, max_tokens=32, thinking=disabled (matches Day -2 Amendment #2 baseline)",
+  "v2_cascade_stages": [
+    "strict",
+    "permissive",
+    "md_strip",
+    "last_token",
+    "unparseable"
+  ],
+  "n_attempted": 250,
+  "parsed_rate_overall": 1.0,
+  "parsed_rate_intact": 1.0,
+  "parsed_rate_violated": 1.0,
+  "parse_stage_breakdown": {
+    "last_token": 250
+  },
+  "yes_count": 0,
+  "no_count": 250,
+  "yes_rate_parsed": 0.0,
+  "no_rate_parsed": 1.0,
+  "n_intact": 68,
+  "n_violated": 182,
+  "n_intact_parsed": 68,
+  "n_violated_parsed": 182,
+  "detection_rate_intact_correctness": 1.0,
+  "detection_rate_violated_correctness": 0.0,
+  "gap_spec_convention": -1.0,
+  "gap_alt_convention_intact_minus_violated": 1.0,
+  "cohens_h": -3.141588653500895,
+  "ci_95_gap_spec": [
+    -1.0,
+    -1.0
+  ],
+  "v1_v2_deltas": {
+    "rescued_by_v2": 0,
+    "classification_differs": 0
+  }
+}

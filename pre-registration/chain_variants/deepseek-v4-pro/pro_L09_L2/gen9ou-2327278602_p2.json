@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L09_L2",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2327278602_p2",
+  "lever_varied": 9,
+  "level_varied": "L2",
+  "lever": 9,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "step=1 | turn=0 | from_phase:initial | to_phase:vs_unit_A | trigger:opponent_switch | type:SubGoalTransition\nstep=2 | turn=0 | observable_added:[unit_A] | observable_removed:[] | uncertainty:0.5 | type:InformationState\nstep=3 | turn=0 | tool:unit_A | state:available | recover_in:null | type:ToolAvailability | active_own:unit_A\nstep=4 | turn=1 | resource:pp_action_1_opp | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=5 | turn=1 | resource:pp_action_1_own | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=6 | turn=1 | resource:hp_unit_A | amount:0.25 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=7 | turn=2 | tool:unit_A | state:unavailable | recover_in:0 | type:ToolAvailability | active_own:unit_A\nstep=8 | turn=2 | from_phase:vs_unit_A | to_phase:vs_unit_B | trigger:opponent_switch | type:SubGoalTransition | active_own:unit_A\nstep=9 | turn=2 | observable_added:[unit_B] | observable_removed:[] | uncertainty:0.5 | type:InformationState | active_own:unit_A\nstep=10 | turn=2 | resource:pp_action_2_own | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=11 | turn=2 | resource:hp_unit_B | amount:0.75 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=12 | turn=2 | resource:hp_unit_B | amount:1.0 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=13 | turn=3 | tool:unit_A | state:unavailable | recover_in:0 | type:ToolAvailability | active_own:unit_B\nstep=14 | turn=3 | tool:unit_B | state:available | recover_in:null | type:ToolAvailability | active_own:unit_B\nstep=15 | turn=3 | resource:pp_action_1_opp | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_B\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 34,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

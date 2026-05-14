@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L08_L5",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2291273479_p2_shuffled_1337",
+  "lever_varied": 8,
+  "level_varied": "L5",
+  "lever": 8,
+  "level": "L5",
+  "k": 30,
+  "prompt_user": "Step 1 (turn=7):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_D' (trigger=opponent_switch)\nStep 2 (turn=7):\n  ToolAvailability: unit_B is now UNAVAILABLE (permanent)\nStep 3 (turn=7):\n  ToolAvailability: unit_C is now UNAVAILABLE (permanent)\nStep 4 (turn=7):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 5 (turn=7):\n  ToolAvailability: unit_D is now AVAILABLE\nStep 6 (turn=8):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 7 (turn=8):\n  ResourceBudget: hp_unit_C at 50.0%\nStep 8 (turn=8):\n  ResourceBudget: pp_action_1_own at 81.2% (decay=monotone_decrease)\nStep 9 (turn=8):\n  ResourceBudget: hp_unit_E at 100.0%\nStep 10 (turn=8):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_B' (trigger=opponent_switch)\nStep 11 (turn=9):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent)\nStep 12 (turn=9):\n  SubGoalTransition: phase shifted from 'forced_switch_required' to 'forced_switch_required' (trigger=own_faint)\nStep 13 (turn=9):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 14 (turn=9):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 15 (turn=9):\n  ResourceBudget: hp_unit_D at 25.0%\nStep 16 (turn=9):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 17 (turn=9):\n  ResourceBudget: match_time_remaining at 83.3% (decay=monotone_decrease)\nStep 18 (turn=10):\n  ResourceBudget: pp_action_3_opp at 93.8% (decay=monotone_decrease)\nStep 19 (turn=10):\n  ResourceBudget: hp_unit_C at 50.0%\nStep 20 (turn=10):\n  ToolAvailability: unit_E is now AVAILABLE\nStep 21 (turn=10):\n  SubGoalTransition: phase shifted from 'initial' to 'forced_switch_required' (trigger=own_faint)\nStep 22 (turn=10):\n  ResourceBudget: hp_unit_C at 0.0%\nStep 23 (turn=10):\n  ToolAvailability: unit_B is now UNAVAILABLE (permanent)\nStep 24 (turn=10):\n  ResourceBudget: hp_unit_B at 0.0%\nStep 25 (turn=11):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 26 (turn=11):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 27 (turn=11):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 28 (turn=11):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\nStep 29 (turn=11):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 30 (turn=12):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_C' (trigger=opponent_switch)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 48,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

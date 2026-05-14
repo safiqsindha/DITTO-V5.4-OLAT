@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L18_L4",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2272614714_p1_shuffled_1337",
+  "lever_varied": 18,
+  "level_varied": "L4",
+  "lever": 18,
+  "level": "L4",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 2 (turn=0):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 3 (turn=0):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_A' (trigger=opponent_switch)\nStep 4 (turn=1):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 5 (turn=1):\n  ResourceBudget: hp_unit_A at 75.0%\nStep 6 (turn=1):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 7 (turn=1):\n  ResourceBudget: match_time_remaining at 91.7% (decay=monotone_decrease)\nStep 8 (turn=1):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 9 (turn=1):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 10 (turn=1):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 11 (turn=2):\n  SubGoalTransition: phase shifted from 'initial' to 'vs_unit_A' (trigger=opponent_switch)\nStep 12 (turn=2):\n  ResourceBudget: hp_unit_B at 25.0%\nStep 13 (turn=2):\n  ResourceBudget: hp_unit_A at 100.0%\nStep 14 (turn=2):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 15 (turn=3):\n  ResourceBudget: hp_unit_B at 100.0%\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 64,
+    "thinking": {
+      "type": "enabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 4,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

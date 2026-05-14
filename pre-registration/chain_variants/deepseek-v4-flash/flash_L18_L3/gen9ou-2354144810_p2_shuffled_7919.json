@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L18_L3",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2354144810_p2_shuffled_7919",
+  "lever_varied": 18,
+  "level_varied": "L3",
+  "lever": 18,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 2 (turn=0):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 3 (turn=0):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 4 (turn=0):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 5 (turn=1):\n  ResourceBudget: hp_unit_B at 100.0%\nStep 6 (turn=1):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 7 (turn=1):\n  ResourceBudget: hp_unit_A at 50.0%\nStep 8 (turn=1):\n  ResourceBudget: match_time_remaining at 91.7% (decay=monotone_decrease)\nStep 9 (turn=1):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 10 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 11 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 12 (turn=2):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease)\nStep 13 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent)\nStep 14 (turn=2):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_A' (trigger=opponent_switch)\nStep 15 (turn=2):\n  ResourceBudget: hp_unit_A at 75.0%\n\nDoes this battle chain contain any rule violations? Review the chain event by event. For each event, check whether it conforms to the rules of Pokemon battles. Identify any event that violates a rule. Therefore, the answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 9,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

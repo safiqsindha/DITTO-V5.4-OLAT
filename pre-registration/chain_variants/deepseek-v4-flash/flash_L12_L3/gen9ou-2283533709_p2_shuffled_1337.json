@@ -1,0 +1,31 @@
+{
+  "condition_id": "flash_L12_L3",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2283533709_p2_shuffled_1337",
+  "lever_varied": 12,
+  "level_varied": "L3",
+  "lever": 12,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_A' (trigger=opponent_switch)\nStep 2 (turn=0):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 3 (turn=0):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 4 (turn=1):\n  ResourceBudget: hp_unit_B at 75.0%\nStep 5 (turn=1):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 6 (turn=1):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 7 (turn=1):\n  SubGoalTransition: phase shifted from 'initial' to 'forced_switch_required' (trigger=own_faint)\nStep 8 (turn=1):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 9 (turn=1):\n  ToolAvailability: unit_C is now UNAVAILABLE (permanent)\nStep 10 (turn=2):\n  ResourceBudget: hp_unit_B at 100.0%\nStep 11 (turn=2):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 12 (turn=2):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 13 (turn=3):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 14 (turn=3):\n  SubGoalTransition: phase shifted from 'initial' to 'vs_unit_A' (trigger=opponent_switch)\nStep 15 (turn=3):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    },
+    "function_calling": true,
+    "endpoint_suffix": "/beta",
+    "tool_choice": "required"
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 40,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

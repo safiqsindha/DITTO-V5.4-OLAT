@@ -1,0 +1,32 @@
+{
+  "diagnostic": "H_cot_v4pro",
+  "config": {
+    "model": "deepseek-v4-pro",
+    "k": 15,
+    "max_tokens": 512,
+    "n": 50,
+    "lever_18_level": "L2 (think step by step)"
+  },
+  "metrics": {
+    "yes_rate_parsed": 0.2962962962962963,
+    "no_rate_parsed": 0.7037037037037037,
+    "detection_rate_intact": 0.75,
+    "detection_rate_violated": 0.3333333333333333,
+    "gap": -0.4166666666666667,
+    "detection_rate_intact_parsed_only": 0.75,
+    "detection_rate_violated_parsed_only": 0.3333333333333333,
+    "errors": 0,
+    "unparseable": 23,
+    "parse_stages": {
+      "permissive": 27,
+      "unparseable": 23
+    },
+    "label_breakdown": {
+      "NO": 19,
+      "YES": 8,
+      "null": 23
+    },
+    "mean_completion_tokens": 382.06
+  },
+  "elapsed_s": 173.8
+}

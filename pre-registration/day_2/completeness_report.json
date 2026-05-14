@@ -1,0 +1,13 @@
+{
+  "n_provenance": 3200,
+  "n_assignments": 3200,
+  "is_complete": true,
+  "n_orphan_prov_only": 0,
+  "n_orphan_assign_only": 0,
+  "orphan_prov_only_sample": [],
+  "orphan_assign_only_sample": [],
+  "conditions_wrong_count": {},
+  "n_api_failures": 0,
+  "n_parse_failures": 184,
+  "global_parse_fail_rate": 0.0575
+}

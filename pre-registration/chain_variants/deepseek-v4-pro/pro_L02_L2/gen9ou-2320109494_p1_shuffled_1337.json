@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L02_L2",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2320109494_p1_shuffled_1337",
+  "lever_varied": 2,
+  "level_varied": "L2",
+  "lever": 2,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "# Constraint chain (perspective=p1)\nStep 1 (turn=13):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 2 (turn=14):\n  ResourceBudget: pp_action_3_opp at 87.5% (decay=monotone_decrease)\nStep 3 (turn=14):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\nStep 4 (turn=14):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_D' (trigger=opponent_switch)\nStep 5 (turn=14):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 6 (turn=14):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 7 (turn=15):\n  ResourceBudget: pp_action_3_opp at 93.8% (decay=monotone_decrease)\nStep 8 (turn=15):\n  ResourceBudget: pp_action_1_opp at 81.2% (decay=monotone_decrease)\nStep 9 (turn=15):\n  ResourceBudget: hp_unit_A at 75.0% (decay=none)\nStep 10 (turn=15):\n  ResourceBudget: hp_unit_A at 100.0% (decay=none)\nStep 11 (turn=15):\n  ResourceBudget: hp_unit_C at 50.0% (decay=none)\nStep 12 (turn=15):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\nStep 13 (turn=15):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 14 (turn=16):\n  ResourceBudget: hp_unit_C at 100.0% (decay=none)\nStep 15 (turn=16):\n  ToolAvailability: unit_C is now AVAILABLE\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "monotone_increase",
+  "assignment_index": 21,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

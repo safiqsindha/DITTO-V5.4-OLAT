@@ -1,0 +1,61 @@
+========================================================================
+Task 2 — V4-Pro Day -2 Verification (n=250)
+========================================================================
+Model:        deepseek-v4-pro
+Endpoint:     https://api.deepseek.com
+Temperature:  0.0
+max_tokens:   32
+cutoff k:     15
+thinking:     disabled
+Parser:       v2 4-stage cascade (strict → permissive → md_strip → last_token)
+Sample:       /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_3/verification_n250_sample.jsonl
+========================================================================
+Key prefix: sk-105d6...
+Loaded 250 chains: 68 intact / 182 violated
+
+Starting parallel API calls...
+  Progress: 25/250 (8s elapsed)
+  Progress: 50/250 (15s elapsed)
+  Progress: 75/250 (23s elapsed)
+  Progress: 100/250 (31s elapsed)
+  Progress: 125/250 (39s elapsed)
+  Progress: 150/250 (46s elapsed)
+  Progress: 175/250 (53s elapsed)
+  Progress: 200/250 (61s elapsed)
+  Progress: 225/250 (69s elapsed)
+  Progress: 250/250 (77s elapsed)
+All calls complete in 77.1s (0.31s/call avg)
+
+Raw responses: raw_responses.ndjson
+Provenance:    parser_provenance.ndjson
+
+========================================================================
+Verification Metrics (V4-Pro)
+========================================================================
+n_attempted:               250
+n_valid:                   246
+errors:                    0
+unparseable:               4
+parse_failure_rate:        0.0160
+
+Parse stage breakdown:     {'last_token': 243, 'unparseable': 4, 'strict': 3}
+finish_reason:             {'stop': 244, 'length': 6}
+mean completion_tokens:    1.86
+
+n_intact:                  68
+n_violated:                178
+detection_rate_intact:     0.8971  (61/68)
+detection_rate_violated:   0.1404  (25/178)
+gap (SPEC):                -0.7566
+Cohen's h:                 -1.7201
+95% bootstrap CI:          [-0.8379, -0.6675]
+YES_rate (parsed):         0.1301
+NO_rate (parsed):          0.8699
+
+========================================================================
+Scenario Classification (S1-S6)
+========================================================================
+PAUSE triggered:
+  - S2 (anti-detection): gap=-0.7566 < -0.05
+
+Scenario evaluation: scenario_evaluation.md

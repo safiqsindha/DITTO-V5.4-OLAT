@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L08_L5",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2272252150_p1_shuffled_1337",
+  "lever_varied": 8,
+  "level_varied": "L5",
+  "lever": 8,
+  "level": "L5",
+  "k": 30,
+  "prompt_user": "Step 1 (turn=16):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 2 (turn=16):\n  ResourceBudget: pp_action_3_own at 93.8% (decay=monotone_decrease)\nStep 3 (turn=16):\n  ResourceBudget: hp_unit_D at 25.0%\nStep 4 (turn=16):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_A' (trigger=opponent_switch)\nStep 5 (turn=16):\n  ResourceBudget: hp_unit_B at 25.0%\nStep 6 (turn=16):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 7 (turn=17):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 8 (turn=17):\n  ToolAvailability: unit_D is now AVAILABLE\nStep 9 (turn=17):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 10 (turn=17):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 11 (turn=17):\n  ResourceBudget: pp_action_1_own at 87.5% (decay=monotone_decrease)\nStep 12 (turn=17):\n  ResourceBudget: hp_unit_A at 75.0%\nStep 13 (turn=17):\n  ResourceBudget: hp_unit_C at 25.0%\nStep 14 (turn=17):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 15 (turn=18):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 16 (turn=18):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 17 (turn=18):\n  OptimizationCriterion: objective=weather_snow weight_shift=weather_D\nStep 18 (turn=18):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 19 (turn=18):\n  SubGoalTransition: phase shifted from 'initial' to 'forced_switch_required' (trigger=own_faint)\nStep 20 (turn=18):\n  ResourceBudget: pp_action_2_opp at 68.8% (decay=monotone_decrease)\nStep 21 (turn=18):\n  ResourceBudget: hp_unit_C at 25.0%\nStep 22 (turn=18):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 23 (turn=18):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 24 (turn=18):\n  ResourceBudget: hp_unit_A at 100.0%\nStep 25 (turn=18):\n  OptimizationCriterion: objective=weather_none weight_shift=neutral\nStep 26 (turn=18):\n  CoordinationDependency: field_side_p2 depends on hazard_move:stealthrock -> expected_action=hazard_response\nStep 27 (turn=18):\n  OptimizationCriterion: objective=weather_sunnyday weight_shift=weather_B\nStep 28 (turn=18):\n  ResourceBudget: match_time_remaining at 66.7% (decay=monotone_decrease)\nStep 29 (turn=19):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 30 (turn=19):\n  OptimizationCriterion: objective=weather_snow weight_shift=weather_D\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 14,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

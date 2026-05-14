@@ -1,0 +1,30 @@
+{
+  "diagnostic": "G_v4pro_baseline",
+  "config": {
+    "model": "deepseek-v4-pro",
+    "k": 15,
+    "max_tokens": 32,
+    "n": 50,
+    "lever_18_level": "L1 (no CoT, V1-minimal)"
+  },
+  "metrics": {
+    "yes_rate": 0.08163265306122448,
+    "no_rate": 0.9183673469387755,
+    "detection_rate_intact": 0.9375,
+    "detection_rate_violated": 0.09090909090909091,
+    "gap": -0.8465909090909091,
+    "errors": 0,
+    "unparseable": 1,
+    "parse_stages": {
+      "first_token": 49,
+      "unparseable": 1
+    },
+    "label_breakdown": {
+      "NO": 45,
+      "YES": 4,
+      "null": 1
+    },
+    "mean_completion_tokens": 1.92
+  },
+  "elapsed_s": 16.0
+}

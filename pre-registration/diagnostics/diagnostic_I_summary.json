@@ -1,0 +1,87 @@
+{
+  "diagnostic": "I",
+  "config": {
+    "models": [
+      "deepseek-v4-flash",
+      "deepseek-v4-pro"
+    ],
+    "max_tokens": 4096,
+    "k": 15,
+    "n": 20
+  },
+  "per_model": {
+    "deepseek-v4-flash": {
+      "n": 20,
+      "parsed": 3,
+      "unparseable": 17,
+      "completion_tokens_all": [
+        417,
+        398,
+        620,
+        467,
+        404,
+        412,
+        549,
+        452,
+        320,
+        252,
+        550,
+        558,
+        312,
+        329,
+        488,
+        371,
+        633,
+        460,
+        428,
+        701
+      ],
+      "completion_tokens_parsed": [
+        467,
+        404,
+        428
+      ]
+    },
+    "deepseek-v4-pro": {
+      "n": 20,
+      "parsed": 12,
+      "unparseable": 8,
+      "completion_tokens_all": [
+        284,
+        305,
+        386,
+        411,
+        352,
+        392,
+        495,
+        540,
+        312,
+        446,
+        430,
+        303,
+        253,
+        278,
+        320,
+        209,
+        369,
+        385,
+        409,
+        479
+      ],
+      "completion_tokens_parsed": [
+        305,
+        386,
+        411,
+        392,
+        540,
+        446,
+        303,
+        253,
+        278,
+        209,
+        369,
+        385
+      ]
+    }
+  }
+}

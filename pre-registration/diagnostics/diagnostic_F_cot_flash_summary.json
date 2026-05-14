@@ -1,0 +1,29 @@
+{
+  "diagnostic": "F_cot_flash",
+  "config": {
+    "model": "deepseek-v4-flash",
+    "k": 15,
+    "max_tokens": 512,
+    "n": 50,
+    "lever_18_level": "L2 (think step by step)"
+  },
+  "metrics": {
+    "yes_rate": 1.0,
+    "no_rate": 0.0,
+    "detection_rate_intact": 0.0,
+    "detection_rate_violated": 1.0,
+    "gap": 1.0,
+    "unparseable": 45,
+    "parse_stages": {
+      "unparseable": 45,
+      "permissive": 4,
+      "strict": 1
+    },
+    "label_breakdown": {
+      "null": 45,
+      "YES": 5
+    },
+    "mean_completion_tokens": 426.6
+  },
+  "elapsed_s": 82.9
+}

@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L24_L3",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2348078225_p1",
+  "lever_varied": 24,
+  "level_varied": "L3",
+  "lever": 24,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=2):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 2 (turn=2):\n  ResourceBudget: hp_unit_A at 50.0%\nStep 3 (turn=2):\n  ResourceBudget: hp_unit_A at 25.0%\nStep 4 (turn=3):\n  ResourceBudget: pp_action_3_own at 93.8% (decay=monotone_decrease)\nStep 5 (turn=3):\n  CoordinationDependency: field_side_p2 depends on hazard_move:stealthrock -> expected_action=hazard_response\nStep 6 (turn=3):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\nStep 7 (turn=3):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 8 (turn=3):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent)\nStep 9 (turn=3):\n  SubGoalTransition: phase shifted from 'initial' to 'forced_switch_required' (trigger=own_faint)\nStep 10 (turn=3):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 11 (turn=4):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 12 (turn=4):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_C' (trigger=opponent_switch)\nStep 13 (turn=4):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 14 (turn=4):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 15 (turn=4):\n  ResourceBudget: hp_unit_C at 75.0%\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 5,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

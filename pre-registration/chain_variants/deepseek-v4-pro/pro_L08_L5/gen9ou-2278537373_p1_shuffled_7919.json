@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L08_L5",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2278537373_p1_shuffled_7919",
+  "lever_varied": 8,
+  "level_varied": "L5",
+  "lever": 8,
+  "level": "L5",
+  "k": 30,
+  "prompt_user": "Step 1 (turn=0):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 2 (turn=0):\n  SubGoalTransition: phase shifted from 'vs_unit_D' to 'vs_unit_A' (trigger=opponent_switch)\nStep 3 (turn=0):\n  ResourceBudget: hp_unit_D at 75.0%\nStep 4 (turn=1):\n  SubGoalTransition: phase shifted from 'vs_unit_B' to 'vs_unit_C' (trigger=opponent_switch)\nStep 5 (turn=1):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 6 (turn=1):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 7 (turn=1):\n  SubGoalTransition: phase shifted from 'initial' to 'forced_switch_required' (trigger=own_faint)\nStep 8 (turn=1):\n  ResourceBudget: hp_unit_B at 0.0%\nStep 9 (turn=2):\n  ToolAvailability: unit_B is now UNAVAILABLE (permanent)\nStep 10 (turn=2):\n  ResourceBudget: hp_unit_B at 25.0%\nStep 11 (turn=2):\n  ResourceBudget: hp_unit_B at 0.0%\nStep 12 (turn=2):\n  ResourceBudget: hp_unit_D at 75.0%\nStep 13 (turn=3):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 14 (turn=3):\n  ResourceBudget: status_unit_D at 50.0%\nStep 15 (turn=3):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 16 (turn=3):\n  SubGoalTransition: phase shifted from 'initial' to 'vs_unit_A' (trigger=opponent_switch)\nStep 17 (turn=3):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 18 (turn=4):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 19 (turn=4):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 20 (turn=4):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 21 (turn=5):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 22 (turn=5):\n  ResourceBudget: pp_action_1_own at 87.5% (decay=monotone_decrease)\nStep 23 (turn=5):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 24 (turn=5):\n  ToolAvailability: unit_D is now UNAVAILABLE (recover_in=0)\nStep 25 (turn=5):\n  ResourceBudget: hp_unit_B at 75.0%\nStep 26 (turn=5):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 27 (turn=5):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\nStep 28 (turn=6):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 29 (turn=6):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 30 (turn=6):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 3,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

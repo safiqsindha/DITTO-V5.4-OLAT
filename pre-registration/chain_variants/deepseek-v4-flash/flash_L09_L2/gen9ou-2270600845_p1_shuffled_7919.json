@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L09_L2",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2270600845_p1_shuffled_7919",
+  "lever_varied": 9,
+  "level_varied": "L2",
+  "lever": 9,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "step=1 | turn=0 | resource:hp_unit_A | amount:1.0 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=2 | turn=0 | resource:pp_action_3_own | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=3 | turn=0 | resource:hp_unit_B | amount:1.0 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=4 | turn=1 | resource:pp_action_1_opp | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_B\nstep=5 | turn=1 | resource:hp_unit_A | amount:0.5 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_B\nstep=6 | turn=1 | resource:hp_unit_A | amount:0.75 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=7 | turn=1 | tool:unit_B | state:unavailable | recover_in:null | type:ToolAvailability | active_own:unit_A\nstep=8 | turn=2 | objective:field_move:trickroom | weight_shift:field_move:trickroom_shift | type:OptimizationCriterion | active_own:unit_A\nstep=9 | turn=2 | tool:unit_B | state:available | recover_in:null | type:ToolAvailability | active_own:unit_B\nstep=10 | turn=2 | resource:pp_action_2_opp | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=11 | turn=2 | tool:unit_A | state:unavailable | recover_in:0 | type:ToolAvailability | active_own:unit_B\nstep=12 | turn=3 | resource:pp_action_2_own | amount:0.8125 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=13 | turn=3 | resource:hp_unit_C | amount:1.0 | decay:none | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=14 | turn=3 | resource:pp_action_2_own | amount:0.875 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\nstep=15 | turn=3 | resource:pp_action_1_opp | amount:0.9375 | decay:monotone_decrease | recover_in:null | type:ResourceBudget | active_own:unit_A\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "monotone_increase",
+  "assignment_index": 19,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

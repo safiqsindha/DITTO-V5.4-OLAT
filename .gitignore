@@ -1,0 +1,11 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+.DS_Store
+.venv/
+venv/
+results/raw/
+# Log files may contain partial API key prefixes printed at executor startup.
+*.log
+day1_run.log

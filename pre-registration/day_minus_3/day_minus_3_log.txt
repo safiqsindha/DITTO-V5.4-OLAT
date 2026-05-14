@@ -1,0 +1,54 @@
+========================================================================
+Day -3 — Chain Pool Inventory & Verification Sample Selection
+========================================================================
+Verdicts CSV:    /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.3- Pokemon Diag/pokemon-v1-symbolic/outputs/phase3_results_v4.csv
+Real chains:     /Users/safiqsindha/Desktop/Project Ditto/Ditto V1/chains/real_v2
+Shuffled chains: /Users/safiqsindha/Desktop/Project Ditto/Ditto V1/chains/shuffled_v2
+
+Total verdicts loaded: 19428
+  Eligible (not excluded): 19428
+  Excluded:                0
+
+Violation type distribution (eligible pool):
+  multiple                    8386
+  none                        6503
+  causal_incoherence          2797
+  hp_resurrection              941
+  monotone_increase            437
+  dead_unit_returns            169
+  faint_no_permanence          150
+  double_availability           45
+
+O7 paralysis filter: PASS — no paralysis-related violation_type in eligible pool.
+  (Symbolic checker taxonomy contains no PARA rule; assertion is structural.)
+
+Violation taxonomy: PASS — all 8 types in expected set.
+
+Ground truth split (Lever 24 L1 — chain_id pattern):
+  Real (ground truth NO violation):     4857
+  Shuffled (ground truth YES violation): 14571
+
+  Of shuffled chains, 1659 have checker verdict='none'
+  (false negatives from checker's ~88.6% recall; ground truth from chain_id stands)
+
+Spot-checking file existence (10 random chain_ids)...
+  All 10 spot-check files exist.
+
+Lever 5 L1 random sample: n=250, seed=42
+  Sample composition: 68 real / 182 shuffled
+  Sample violation_type distribution:
+    multiple                   108
+    none                        81
+    causal_incoherence          29
+    hp_resurrection             20
+    monotone_increase            8
+    dead_unit_returns            2
+    faint_no_permanence          2
+
+Wrote sample: /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_3/verification_n250_sample.jsonl
+Wrote inventory: /Users/safiqsindha/Desktop/Project Ditto/Ditto-5.4-OLAT/pre-registration/day_minus_3/chain_pool_inventory.json
+
+Day -3 complete. Status: PASS.
+  - Eligible pool: 19428 chains
+  - O7 paralysis filter: PASS (structural)
+  - Verification n=250 sample ready at verification_n250_sample.jsonl

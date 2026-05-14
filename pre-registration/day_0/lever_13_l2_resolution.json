@@ -1,0 +1,30 @@
+{
+  "generated": "2026-05-12",
+  "task": "Task 1 \u2014 Resolve O9 (Lever 13 L2 abstraction selection)",
+  "selection_method": "corpus_frequency",
+  "selection_method_rationale": "Symbolic checker (pokemon_rule_checker.py) exposes no importance_metrics attribute or method. Classes: ViolationResult, Path. Functions: check_chain, check_chain_file, load_chain, _available, _permanent_faint, _switch_out. Frequency fallback triggered per artifacts/lever_13_fallback.md Amendment #4 patch: importance branch requires non-empty 'scored' dict; checker returns nothing \u2192 fallback activates.",
+  "selected_abstractions": [
+    "ResourceBudget_HP",
+    "SubGoalTransition",
+    "ToolAvailability"
+  ],
+  "tiebreak_applied": false,
+  "scores": {
+    "ResourceBudget_HP": 4962,
+    "SubGoalTransition": 4296,
+    "ToolAvailability": 2211,
+    "ResourceBudget_PP": 1193,
+    "ResourceBudget_time": 263,
+    "ResourceBudget_status": 0,
+    "ResourceBudget_boost": 0,
+    "InformationState": 0
+  },
+  "score_definition": "Count of violated chains where this abstraction is the primary violation (first rule matched in symbolic checker output). Mapped from violation_type and details fields in phase3_results_v4.csv. Mapping: dead_unit_returns\u2192ToolAvailability, hp_resurrection/faint_no_permanence\u2192ResourceBudget_HP, double_availability\u2192ToolAvailability, causal_incoherence\u2192SubGoalTransition (R11) or ToolAvailability (R10) per details regex, monotone_increase\u2192ResourceBudget_PP (pp_action resources) or ResourceBudget_time (match_time_remaining). ResourceBudget_status, ResourceBudget_boost, InformationState have no active rules in v5.3 and score 0.",
+  "corpus_source": "Ditto-5.3- Pokemon Diag/pokemon-v1-symbolic/outputs/phase3_results_v4.csv",
+  "total_chains": 19428,
+  "total_violated_chains": 12925,
+  "unresolved_chains": 0,
+  "ranking_notes": "No tie-break required \u2014 all non-zero scores are distinct. Dimensional-only abstractions (ResourceBudget_status, ResourceBudget_boost) and InformationState (no v5.3 rule) all score 0 and naturally exclude from top-3 per SPEC \u00a77.1 Lever 13 documented feature.",
+  "confirmation_required": false,
+  "confirmation_status": "CONFIRMED \u2014 user confirmed 2026-05-12"
+}

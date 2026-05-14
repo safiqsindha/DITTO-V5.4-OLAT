@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L15_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2320688421_p1_shuffled_42",
+  "lever_varied": 15,
+  "level_varied": "L3",
+  "lever": 15,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=0):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 2 (turn=0):\n  ToolAvailability: unit_A is now UNAVAILABLE (recover_in=0)\nStep 3 (turn=0):\n  OptimizationCriterion: objective=weather_snowscape weight_shift=unknown_weather_shift\nStep 4 (turn=1):\n  OptimizationCriterion: objective=weather_snowscape weight_shift=unknown_weather_shift\nStep 5 (turn=1):\n  ToolAvailability: unit_D is now AVAILABLE\nStep 6 (turn=1):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\nStep 7 (turn=1):\n  ResourceBudget: match_time_remaining at 91.7% (decay=monotone_decrease)\nStep 8 (turn=2):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 9 (turn=2):\n  ToolAvailability: unit_B is now AVAILABLE\nStep 10 (turn=2):\n  CoordinationDependency: field_side_p1 depends on hazard_move:stealthrock -> expected_action=hazard_response\nStep 11 (turn=2):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 12 (turn=2):\n  ResourceBudget: hp_unit_B at 75.0%\nStep 13 (turn=2):\n  OptimizationCriterion: objective=weather_snowscape weight_shift=unknown_weather_shift\nStep 14 (turn=2):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\nStep 15 (turn=3):\n  ToolAvailability: unit_C is now AVAILABLE\n\nWhat is the probability this chain contains a rule violation? Answer 0\u2013100.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "causal_incoherence",
+  "assignment_index": 10,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L01_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2321486759_p2",
+  "lever_varied": 1,
+  "level_varied": "L3",
+  "lever": 1,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "# Constraint chain (perspective=p2)\nStep 1 (turn=10):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\n  active_pair: own=unit_D opp=unit_C\nStep 2 (turn=10):\n  ResourceBudget: hp_unit_D at 75.0% (decay=none)\n  active_pair: own=unit_D opp=unit_C\nStep 3 (turn=11):\n  ToolAvailability: unit_C is now UNAVAILABLE (recover_in=0)\n  active_pair: own=unit_D opp=unit_D\nStep 4 (turn=11):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_D' (trigger=opponent_switch)\n  active_pair: own=unit_D opp=unit_D\nStep 5 (turn=11):\n  InformationState: added=[unit_D] removed=[none] uncertainty=0.50\n  active_pair: own=unit_D opp=unit_D\nStep 6 (turn=11):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\n  active_pair: own=unit_D opp=unit_D\nStep 7 (turn=11):\n  ResourceBudget: hp_unit_D at 100.0% (decay=none)\n  active_pair: own=unit_D opp=unit_D\nStep 8 (turn=12):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\n  active_pair: own=unit_D opp=unit_D\nStep 9 (turn=12):\n  ResourceBudget: hp_unit_D at 75.0% (decay=none)\n  active_pair: own=unit_D opp=unit_D\nStep 10 (turn=12):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\n  active_pair: own=unit_D opp=unit_D\nStep 11 (turn=12):\n  ResourceBudget: hp_unit_D at 100.0% (decay=none)\n  active_pair: own=unit_D opp=unit_D\nStep 12 (turn=13):\n  ToolAvailability: unit_D is now UNAVAILABLE (recover_in=0)\n  active_pair: own=unit_B opp=unit_D\nStep 13 (turn=13):\n  ToolAvailability: unit_B is now AVAILABLE\n  active_pair: own=unit_B opp=unit_D\nStep 14 (turn=13):\n  ResourceBudget: hp_unit_B at 100.0% (decay=none)\n  active_pair: own=unit_B opp=unit_D\nStep 15 (turn=13):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\n  active_pair: own=unit_B opp=unit_D\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 35,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

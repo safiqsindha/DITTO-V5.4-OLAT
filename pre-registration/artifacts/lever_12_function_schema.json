@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "status": "RESOLVED — O3 accepted with documentation addendum (decision-sheet-v1.md, 2026-05-11)",
+    "o3_resolution": "8 abstraction names confirmed: 5 ResourceBudget sub-types + ToolAvailability + SubGoalTransition + InformationState. CoordinationDependency and OptimizationCriterion excluded per EC-07 (no violation rules apply).",
+    "rule_bearing_vs_dimensional": "Six of the eight abstractions are RULE-BEARING — symbolic checker rules exist: ResourceBudget_HP (R3/R4/R8/R9), ResourceBudget_PP (R1), ResourceBudget_time (R1), ToolAvailability (R2/R6/R10), SubGoalTransition (R11), InformationState (assessment-only as of v5.3 but rule-eligible). Two are DIMENSIONAL-ONLY — no symbolic checker rules apply: ResourceBudget_status (decay=none/turn_based; no rule), ResourceBudget_boost (decay=none; no rule). The dimensional-only abstractions appear in the schema for completeness of the abstraction space. They will not generate violation events in the test set, and Lever 13 L2 (top-3 by importance or frequency) will naturally exclude them under either selection criterion. This asymmetry is a documented feature, not a defect.",
+    "api_target": "https://api.deepseek.com/beta",
+    "strict_mode": true,
+    "verified_against": "DeepSeek strict-mode function calling documentation (May 11, 2026)",
+    "schema_constraints_satisfied": [
+      "additionalProperties: false on all object definitions",
+      "every property listed in required array",
+      "no minLength / maxLength / minItems / maxItems / patternProperties / numerical bounds"
+    ]
+  },
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "analyze_battle_chain",
+        "description": "Analyze a Pokemon battle chain for constraint violations. Return structured assessment across the 8 abstraction dimensions.",
+        "strict": true,
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "violation_detected",
+            "abstraction_assessments",
+            "primary_violation_abstraction",
+            "supporting_evidence"
+          ],
+          "properties": {
+            "violation_detected": {
+              "type": "boolean",
+              "description": "True if any rule violation is detected in the chain; false otherwise."
+            },
+            "abstraction_assessments": {
+              "type": "object",
+              "description": "Assessment for each of the 8 abstraction dimensions. All 8 must be populated.",
+              "additionalProperties": false,
+              "required": [
+                "ResourceBudget_HP",
+                "ResourceBudget_PP",
+                "ResourceBudget_time",
+                "ResourceBudget_status",
+                "ResourceBudget_boost",
+                "ToolAvailability",
+                "SubGoalTransition",
+                "InformationState"
+              ],
+              "properties": {
+                "ResourceBudget_HP": {
+                  "type": "object",
+                  "description": "HP resource constraint. Checks for hp_resurrection (R3/R8/R9) and faint_no_permanence (R4). NOTE: HP events have decay='none' in V1 translation layer — R1 (monotone_increase) does NOT apply to HP. Resource names: hp_unit_X. Amount is normalized 0.0-1.0.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": {
+                      "type": "boolean",
+                      "description": "True if an HP constraint is violated in the chain."
+                    },
+                    "turn_index": {
+                      "type": "integer",
+                      "description": "Turn number where violation occurs. Use -1 if no violation."
+                    },
+                    "reasoning": {
+                      "type": "string",
+                      "description": "One-sentence reasoning for the assessment."
+                    }
+                  }
+                },
+                "ResourceBudget_PP": {
+                  "type": "object",
+                  "description": "PP (move uses remaining) resource constraint. Checks for monotone_increase (R1). Resource names: pp_action_N_own, pp_action_N_opp. Amount is normalized 0.0-1.0.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "ResourceBudget_time": {
+                  "type": "object",
+                  "description": "Match time remaining resource constraint. Checks for monotone_increase (R1). Resource name: match_time_remaining. Amount is normalized 0.0-1.0.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "ResourceBudget_status": {
+                  "type": "object",
+                  "description": "Status condition resource constraint. Resource names: status_unit_X. Amount is severity (par/brn=0.5, slp/frz=1.0, psn/tox=0.3). Decay is 'none' for most statuses; 'monotone_decrease_if_turn_based' for sleep/toxic. R1 (monotone_increase for monotone_decrease resources) does NOT apply to most status events. V5.3 symbolic checker may not have an explicit rule for status violations.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "ResourceBudget_boost": {
+                  "type": "object",
+                  "description": "Stat boost resource constraint. Resource names: boost_STAT_unit_X (e.g. boost_atk_unit_A). Amount is magnitude of boost/unboost normalized 0.0-1.0 (stage/6). Decay is 'none'. NOTE: R1 (monotone_increase for monotone_decrease resources) does NOT apply since decay='none'. V5.3 symbolic checker may not have an explicit rule for boost violations.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "ToolAvailability": {
+                  "type": "object",
+                  "description": "Unit availability constraint. Checks for dead_unit_returns (R2), double_availability (R6), causal_incoherence R10. Tool names: unit_A through unit_F. States: available / unavailable.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "SubGoalTransition": {
+                  "type": "object",
+                  "description": "Battle phase transition constraint. Checks for causal_incoherence R11 (initial-phase re-entry after battle started). Fields: from_phase, to_phase, trigger.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                },
+                "InformationState": {
+                  "type": "object",
+                  "description": "Information reveal state constraint. Checks for consistency of observable_added sequences. No direct symbolic checker rule as of v5.3, but included as an assessment dimension.",
+                  "additionalProperties": false,
+                  "required": ["violated", "turn_index", "reasoning"],
+                  "properties": {
+                    "violated": { "type": "boolean" },
+                    "turn_index": { "type": "integer" },
+                    "reasoning": { "type": "string" }
+                  }
+                }
+              }
+            },
+            "primary_violation_abstraction": {
+              "type": "string",
+              "description": "Name of the abstraction dimension where the primary violation occurs. Must be one of the 8 abstraction keys, or 'none' if no violation detected.",
+              "enum": [
+                "ResourceBudget_HP",
+                "ResourceBudget_PP",
+                "ResourceBudget_time",
+                "ResourceBudget_status",
+                "ResourceBudget_boost",
+                "ToolAvailability",
+                "SubGoalTransition",
+                "InformationState",
+                "none"
+              ]
+            },
+            "supporting_evidence": {
+              "type": "string",
+              "description": "Quote or paraphrase of the specific chain event(s) supporting the violation assessment. Empty string if no violation."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "_validation_notes": {
+    "sanitizer_required": true,
+    "parameters_to_strip_before_submission": [
+      "minLength",
+      "maxLength",
+      "minItems",
+      "maxItems",
+      "patternProperties",
+      "numerical_bounds"
+    ],
+    "endpoint": "https://api.deepseek.com/beta",
+    "required_api_params": {
+      "strict": true,
+      "tool_choice": "required",
+      "model": "deepseek-v4-flash",
+      "extra_body": {"thinking": {"type": "disabled"}}
+    },
+    "thinking_mode_constraint": "Lever 12 L3 (strict function calling) requires thinking mode DISABLED. Empirical finding (O4 diagnostic, 2026-05-12): on the /beta endpoint, model=deepseek-v4-flash defaults to thinking-mode enabled, and `tool_choice='required'` is server-rejected ('deepseek-reasoner does not support this tool_choice') under that default. Explicit `extra_body={'thinking': {'type': 'disabled'}}` resolves it while preserving the SPEC's named target model. This constraint is benign in the OLAT matrix because Lever 18 baseline (L1) already disables thinking; the explicit setting is documentation of an implicit prerequisite, not a new methodology constraint.",
+    "lever_17_override": "When testing Lever 12 L3, Lever 17 baseline (free-form YES/NO) is overridden. The boolean YES/NO answer is returned as violation_detected field within this schema.",
+    "lever_18_l4_interaction": "When Lever 18 L4 (native thinking) is active, reasoning_content must be preserved and re-injected across sub-turns within a single user question. Dialogue manager must not strip reasoning_content between tool result and follow-up.",
+    "remaining_pre_signoff": [
+      "O4: Test schema against DeepSeek /beta endpoint with a dummy call before finalizing"
+    ]
+  }
+}

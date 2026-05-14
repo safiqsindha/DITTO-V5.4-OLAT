@@ -1,0 +1,218 @@
+{
+  "S1_anchor_exact": {
+    "overall": {
+      "n": 440,
+      "n_parsed": 1,
+      "parsed_rate": 0.0022727272727272726,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 1,
+      "det_intact": null,
+      "det_violated": 1.0,
+      "gap": null
+    },
+    "F_flash_cot_512": {
+      "n": 50,
+      "n_parsed": 1,
+      "parsed_rate": 0.02,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 1,
+      "det_intact": null,
+      "det_violated": 1.0,
+      "gap": null
+    },
+    "G_pro_v1min_32": {
+      "n": 50,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "H_pro_cot_512": {
+      "n": 50,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "I_flash_cot_4096": {
+      "n": 20,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "I_pro_cot_4096": {
+      "n": 20,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "day-2_flash_v1min_32": {
+      "n": 250,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    }
+  },
+  "S2_anchor_flexible": {
+    "overall": {
+      "n": 440,
+      "n_parsed": 2,
+      "parsed_rate": 0.004545454545454545,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 2,
+      "det_intact": null,
+      "det_violated": 1.0,
+      "gap": null
+    },
+    "F_flash_cot_512": {
+      "n": 50,
+      "n_parsed": 1,
+      "parsed_rate": 0.02,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 1,
+      "det_intact": null,
+      "det_violated": 1.0,
+      "gap": null
+    },
+    "G_pro_v1min_32": {
+      "n": 50,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "H_pro_cot_512": {
+      "n": 50,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "I_flash_cot_4096": {
+      "n": 20,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "I_pro_cot_4096": {
+      "n": 20,
+      "n_parsed": 1,
+      "parsed_rate": 0.05,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 1,
+      "det_intact": null,
+      "det_violated": 1.0,
+      "gap": null
+    },
+    "day-2_flash_v1min_32": {
+      "n": 250,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    }
+  },
+  "S3_anchor_relaxed": {
+    "overall": {
+      "n": 440,
+      "n_parsed": 110,
+      "parsed_rate": 0.25,
+      "n_intact_parsed": 45,
+      "n_violated_parsed": 65,
+      "det_intact": 0.4444444444444444,
+      "det_violated": 0.7538461538461538,
+      "gap": 0.3094017094017094
+    },
+    "F_flash_cot_512": {
+      "n": 50,
+      "n_parsed": 29,
+      "parsed_rate": 0.58,
+      "n_intact_parsed": 11,
+      "n_violated_parsed": 18,
+      "det_intact": 0.36363636363636365,
+      "det_violated": 0.9444444444444444,
+      "gap": 0.5808080808080808
+    },
+    "G_pro_v1min_32": {
+      "n": 50,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    },
+    "H_pro_cot_512": {
+      "n": 50,
+      "n_parsed": 45,
+      "parsed_rate": 0.9,
+      "n_intact_parsed": 16,
+      "n_violated_parsed": 29,
+      "det_intact": 0.5625,
+      "det_violated": 0.6206896551724138,
+      "gap": 0.05818965517241381
+    },
+    "I_flash_cot_4096": {
+      "n": 20,
+      "n_parsed": 16,
+      "parsed_rate": 0.8,
+      "n_intact_parsed": 9,
+      "n_violated_parsed": 7,
+      "det_intact": 0.0,
+      "det_violated": 0.8571428571428571,
+      "gap": 0.8571428571428571
+    },
+    "I_pro_cot_4096": {
+      "n": 20,
+      "n_parsed": 20,
+      "parsed_rate": 1.0,
+      "n_intact_parsed": 9,
+      "n_violated_parsed": 11,
+      "det_intact": 0.7777777777777778,
+      "det_violated": 0.7272727272727273,
+      "gap": -0.0505050505050505
+    },
+    "day-2_flash_v1min_32": {
+      "n": 250,
+      "n_parsed": 0,
+      "parsed_rate": 0.0,
+      "n_intact_parsed": 0,
+      "n_violated_parsed": 0,
+      "det_intact": null,
+      "det_violated": null,
+      "gap": null
+    }
+  }
+}

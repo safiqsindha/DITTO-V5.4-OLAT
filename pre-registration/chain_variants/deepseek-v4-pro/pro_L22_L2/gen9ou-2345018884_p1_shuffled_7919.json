@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L22_L2",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2345018884_p1_shuffled_7919",
+  "lever_varied": 22,
+  "level_varied": "L2",
+  "lever": 22,
+  "level": "L2",
+  "k": 15,
+  "prompt_user": "Step 1 (turn=10):\n  ToolAvailability: unit_F is now AVAILABLE\nStep 2 (turn=10):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 3 (turn=10):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_E' (trigger=opponent_switch)\nStep 4 (turn=10):\n  ToolAvailability: unit_D is now UNAVAILABLE (recover_in=0)\nStep 5 (turn=10):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 6 (turn=10):\n  InformationState: added=[unit_E] removed=[none] uncertainty=0.50\nStep 7 (turn=11):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 8 (turn=11):\n  ResourceBudget: hp_unit_C at 0.0%\nStep 9 (turn=11):\n  SubGoalTransition: phase shifted from 'vs_unit_C' to 'vs_unit_D' (trigger=opponent_switch)\nStep 10 (turn=11):\n  ToolAvailability: unit_C is now UNAVAILABLE (permanent)\nStep 11 (turn=11):\n  ResourceBudget: hp_unit_C at 25.0%\nStep 12 (turn=11):\n  ResourceBudget: match_time_remaining at 75.0% (decay=monotone_decrease)\nStep 13 (turn=12):\n  SubGoalTransition: phase shifted from 'vs_unit_D' to 'vs_unit_C' (trigger=opponent_switch)\nStep 14 (turn=12):\n  ResourceBudget: pp_action_3_own at 93.8% (decay=monotone_decrease)\nStep 15 (turn=12):\n  ResourceBudget: hp_unit_E at 100.0%\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.5,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "multiple",
+  "assignment_index": 47,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

@@ -1,0 +1,28 @@
+{
+  "condition_id": "flash_L08_L2",
+  "model": "deepseek-v4-flash",
+  "chain_id": "gen9ou-2303002268_p2_shuffled_7919",
+  "lever_varied": 8,
+  "level_varied": "L2",
+  "lever": 8,
+  "level": "L2",
+  "k": 10,
+  "prompt_user": "Step 1 (turn=7):\n  InformationState: added=[unit_C] removed=[none] uncertainty=0.50\nStep 2 (turn=8):\n  ToolAvailability: unit_B is now UNAVAILABLE (recover_in=0)\nStep 3 (turn=8):\n  ResourceBudget: pp_action_1_opp at 87.5% (decay=monotone_decrease)\nStep 4 (turn=8):\n  ResourceBudget: hp_unit_B at 75.0%\nStep 5 (turn=8):\n  ResourceBudget: pp_action_2_opp at 87.5% (decay=monotone_decrease)\nStep 6 (turn=8):\n  ToolAvailability: unit_C is now AVAILABLE\nStep 7 (turn=9):\n  ResourceBudget: hp_unit_A at 100.0%\nStep 8 (turn=9):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 9 (turn=9):\n  ResourceBudget: hp_unit_C at 100.0%\nStep 10 (turn=10):\n  ResourceBudget: hp_unit_C at 100.0%\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": true,
+    "L2_planted_violations": true,
+    "L3_symbolic_checker": true
+  },
+  "violation_type": "hp_resurrection",
+  "assignment_index": 39,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}

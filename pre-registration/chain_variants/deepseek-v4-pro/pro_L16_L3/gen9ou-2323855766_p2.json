@@ -1,0 +1,28 @@
+{
+  "condition_id": "pro_L16_L3",
+  "model": "deepseek-v4-pro",
+  "chain_id": "gen9ou-2323855766_p2",
+  "lever_varied": 16,
+  "level_varied": "L3",
+  "lever": 16,
+  "level": "L3",
+  "k": 15,
+  "prompt_user": "RULE_PP: A move requires PP > 0 to be used. Using a move with PP = 0 is a violation.\nRULE_FAINT: A Pokemon with status = fainted cannot take any action. Any action by a fainted Pokemon is a violation.\nRULE_MOVESET: A Pokemon can only use moves in its moveset. Using a move not in the Pokemon's moveset is a violation.\nRULE_SLEEP: A Pokemon with status = sleep cannot use moves (except Sleep Talk or Snore). Using other moves while asleep is a violation.\nRULE_FREEZE: A Pokemon with status = freeze cannot use moves (except moves that thaw). Using other moves while frozen is a violation.\n\nStep 1 (turn=0):\n  SubGoalTransition: phase shifted from 'initial' to 'vs_unit_A' (trigger=opponent_switch)\nStep 2 (turn=0):\n  InformationState: added=[unit_A] removed=[none] uncertainty=0.50\nStep 3 (turn=0):\n  ToolAvailability: unit_A is now AVAILABLE\nStep 4 (turn=1):\n  ResourceBudget: pp_action_1_opp at 93.8% (decay=monotone_decrease)\nStep 5 (turn=1):\n  ResourceBudget: hp_unit_A at 25.0%\nStep 6 (turn=1):\n  ResourceBudget: pp_action_1_own at 93.8% (decay=monotone_decrease)\nStep 7 (turn=1):\n  ResourceBudget: hp_unit_A at 25.0%\nStep 8 (turn=2):\n  ResourceBudget: pp_action_2_opp at 93.8% (decay=monotone_decrease)\nStep 9 (turn=2):\n  CoordinationDependency: field_side_p2 depends on hazard_move:stickyweb -> expected_action=hazard_response\nStep 10 (turn=2):\n  ResourceBudget: pp_action_2_own at 93.8% (decay=monotone_decrease)\nStep 11 (turn=2):\n  ResourceBudget: hp_unit_A at 0.0%\nStep 12 (turn=2):\n  CoordinationDependency: field_side_p1 depends on hazard_type_B -> expected_action=hazard_response\nStep 13 (turn=2):\n  ToolAvailability: unit_A is now UNAVAILABLE (permanent)\nStep 14 (turn=2):\n  SubGoalTransition: phase shifted from 'vs_unit_A' to 'vs_unit_B' (trigger=opponent_switch)\nStep 15 (turn=2):\n  InformationState: added=[unit_B] removed=[none] uncertainty=0.50\n\nDoes this battle chain contain any rule violations? The answer is YES or NO.",
+  "api_params": {
+    "model": "deepseek-v4-pro",
+    "temperature": 0.0,
+    "max_tokens": 32,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "ground_truth": {
+    "L1_shuffled_vs_real": false,
+    "L2_planted_violations": false,
+    "L3_symbolic_checker": false
+  },
+  "violation_type": "none",
+  "assignment_index": 37,
+  "spec_hash": "dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8",
+  "generated_date": "2026-05-13"
+}
