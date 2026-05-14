@@ -1,0 +1,151 @@
+chain_id,GT_L1_shuffled,GT_L2_planted,GT_L3_symbolic,violation_type,rule_triggered,gt_agreement,checker_verdict_text
+gen9ou-2260297169_p2_shuffled_1337,True,True,True,hp_resurrection,ResourceBudget(HP) monotone constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — HP RESURRECTION
+Rule violated: ResourceBudget monotone constraint for HP.
+A unit's HP dropped to 0% (faint) and later appeared at a higher value (> 0%) without an intervening revival action. HP cannot increase after reaching 0% under standard battle rules."
+gen9ou-2261012168_p1_shuffled_7919,True,True,True,causal_incoherence,SubGoalTransition / ToolAvailability causal ordering,all_agree_YES,"VERDICT: VIOLATION DETECTED — CAUSAL INCOHERENCE
+Rule violated: SubGoalTransition or ToolAvailability causal ordering.
+A state transition occurred without a valid triggering condition, or a unit transition referenced a state that could not have been reached by the preceding event sequence. The event ordering is causally inconsistent."
+gen9ou-2262855067_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2270600845_p1_shuffled_7919,True,True,True,monotone_increase,ResourceBudget monotone-decrease constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — MONOTONE INCREASE
+Rule violated: ResourceBudget monotone-decrease constraint.
+A resource annotated decay=monotone_decrease increased between consecutive observations. Resources with this constraint may only decrease or stay constant; any increase is a rule violation."
+gen9ou-2272010071_p2_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2272252150_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2272363626_p2_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2272614714_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2272614714_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2273536349_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2275367426_p2_shuffled_1337,True,True,True,hp_resurrection,ResourceBudget(HP) monotone constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — HP RESURRECTION
+Rule violated: ResourceBudget monotone constraint for HP.
+A unit's HP dropped to 0% (faint) and later appeared at a higher value (> 0%) without an intervening revival action. HP cannot increase after reaching 0% under standard battle rules."
+gen9ou-2276761872_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2278300586_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2278537373_p1_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2283533709_p2_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2286522581_p1_shuffled_1337,True,True,False,none,none,two_YES_one_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2287639343_p2_shuffled_1337,True,True,True,hp_resurrection,ResourceBudget(HP) monotone constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — HP RESURRECTION
+Rule violated: ResourceBudget monotone constraint for HP.
+A unit's HP dropped to 0% (faint) and later appeared at a higher value (> 0%) without an intervening revival action. HP cannot increase after reaching 0% under standard battle rules."
+gen9ou-2287788376_p1_shuffled_42,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2287824764_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2291273479_p2_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2301379516_p1_shuffled_42,True,True,False,none,none,two_YES_one_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2301944495_p1_shuffled_42,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2303002268_p2_shuffled_7919,True,True,True,hp_resurrection,ResourceBudget(HP) monotone constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — HP RESURRECTION
+Rule violated: ResourceBudget monotone constraint for HP.
+A unit's HP dropped to 0% (faint) and later appeared at a higher value (> 0%) without an intervening revival action. HP cannot increase after reaching 0% under standard battle rules."
+gen9ou-2306146403_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2306563046_p2_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2310254076_p2_shuffled_42,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2310556760_p1_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2312002915_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2317659387_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2320109494_p1_shuffled_1337,True,True,True,monotone_increase,ResourceBudget monotone-decrease constraint,all_agree_YES,"VERDICT: VIOLATION DETECTED — MONOTONE INCREASE
+Rule violated: ResourceBudget monotone-decrease constraint.
+A resource annotated decay=monotone_decrease increased between consecutive observations. Resources with this constraint may only decrease or stay constant; any increase is a rule violation."
+gen9ou-2320688421_p1_shuffled_42,True,True,True,causal_incoherence,SubGoalTransition / ToolAvailability causal ordering,all_agree_YES,"VERDICT: VIOLATION DETECTED — CAUSAL INCOHERENCE
+Rule violated: SubGoalTransition or ToolAvailability causal ordering.
+A state transition occurred without a valid triggering condition, or a unit transition referenced a state that could not have been reached by the preceding event sequence. The event ordering is causally inconsistent."
+gen9ou-2320790123_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2321486759_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2321922786_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2323855766_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2326066086_p2_shuffled_42,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2327278602_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2327376263_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2328038098_p2_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2330862666_p2,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2334711641_p2_shuffled_7919,True,True,True,causal_incoherence,SubGoalTransition / ToolAvailability causal ordering,all_agree_YES,"VERDICT: VIOLATION DETECTED — CAUSAL INCOHERENCE
+Rule violated: SubGoalTransition or ToolAvailability causal ordering.
+A state transition occurred without a valid triggering condition, or a unit transition referenced a state that could not have been reached by the preceding event sequence. The event ordering is causally inconsistent."
+gen9ou-2338779384_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2341946701_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2343591826_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2343602002_p1_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2345018884_p1_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2347015993_p1_shuffled_1337,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2348078225_p1,False,False,False,none,none,all_agree_NO,"VERDICT: NO VIOLATION
+Rule checked: All resource budgets, tool availability transitions, subgoal transitions, and coordination dependencies were self-consistent.
+No monotone-decrease violations, HP-resurrection events, causal incoherence, or conflicting state transitions detected."
+gen9ou-2353740572_p1_shuffled_42,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
+gen9ou-2354144810_p2_shuffled_7919,True,True,True,multiple,Multiple (≥2 categories),all_agree_YES,"VERDICT: VIOLATION DETECTED — MULTIPLE VIOLATIONS
+Rules violated: More than one constraint category triggered.
+The chain contains violations across at least two rule categories (e.g., both HP-resurrection and monotone-increase, or HP-resurrection and causal incoherence). Each violation independently constitutes a rule breach."
