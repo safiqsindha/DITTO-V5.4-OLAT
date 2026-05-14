@@ -2,8 +2,9 @@
 
 **SPEC parent hash:** `dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8` (locked at Amendment #6)
 **Author(s):** to be signed by both authors
-**Status:** DRAFT — pending both-author signoff
+**Status:** RETEST COMPLETE — pending both-author signoff
 **Generated:** 2026-05-13
+**Retest completed:** 2026-05-13 22:16 PT (100/100 records, cost ~$4.10)
 
 ---
 
@@ -67,6 +68,27 @@ Determined empirically via two pilots:
 | Cumulative budget impact | within SPEC §7 ceiling of $6.50 for L18 L4 | within ceiling |
 
 Pilot 1 + Pilot 2 combined: $0.28 already spent on diagnostic + threshold confirmation.
+
+---
+
+## 4a. Retest Outcome (added 2026-05-13 22:16 PT)
+
+| Metric | Flash | Pro |
+|---|---|---|
+| Records | 50 | 50 |
+| Truncated at 4096 tokens | 12 (24%) | 15 (30%) |
+| Parseable | 38 (76%) | 35 (70%) |
+| Verdicts YES | 38 (100%) | 35 (100%) |
+| Verdicts NO | 0 | 0 |
+| Mean output tokens (all) | 2,565 | 2,554 |
+
+**Classification (Universe L3):** flash_L18_L4 = Null, pro_L18_L4 = Directional(no_CI) (effect=0.0799 is the same baseline-subtraction artifact seen on the four degenerate Pro conditions — `gap=0.0` minus baseline_gap `−0.0799`).
+
+**Substantive finding:** the model classifies all chains as containing violations under native thinking. `dr_violated = dr_intact = 1.0` on parseable records. This is **YES-bias under native thinking**, not a detection-capability effect.
+
+**Asymmetric truncation:** intact chains truncate at 33% in both models vs. 19% (Flash) / 28% (Pro) on violated chains. This hints that intact-chain reasoning extends beyond 4096 tokens — possibly because confirming "no violation" requires exhausting all candidates rather than identifying one. An Amendment #7B at `max_tokens=8192` would disambiguate whether the truncated 27 would shift any `dr_intact` below 1.0.
+
+**Pilot vs. full-run divergence note:** Pilot 1 (n=10 at 2048) had 20% truncation; pilot 2 (n=2 at 4096, intact chain) had 0%. Both underestimated. The full retest at 4096 lands at 27% truncation overall, with the asymmetric intact-vs-violated pattern visible only at the full sample.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **SPEC hash:** `dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8`  
 **Generated:** 2026-05-13  
-**Status: YELLOW — ready for both-author review pending L18 L4 decision**
+**Status: YELLOW — ready for both-author review; Amendment #7 (L18 L4 retest) complete and pending signoff**
 
 ---
 
@@ -80,14 +80,14 @@ All 6 Meaningful conditions: `robustness_concern=False`, `hidden_signal_candidat
 | flash_L18_L2 | 0.217 | [0.026, 0.500] | **L3 only** | S6 monotone; S5 8% |
 | pro_L12_L3 | 0.191 | [0.017, 0.438] | **L3 only** | Regex-parsed only |
 
-### L18 L4 — Unmeasured (not Unknown)
+### L18 L4 — Resolved via Amendment #7
 
-| Condition | Status | Reason |
+| Condition | Original (max_tokens=64) | Amendment #7 (max_tokens=4096) |
 |---|---|---|
-| flash_L18_L4 | Structural measurement failure | `max_tokens=64` consumed by reasoning; no content produced |
-| pro_L18_L4 | Structural measurement failure | Same |
+| flash_L18_L4 | 100% Unknown (content empty) | Null in all 3 universes; dr_v=dr_i=1.0; 24% truncation |
+| pro_L18_L4 | 100% Unknown (content empty) | Null in all 3 universes; dr_v=dr_i=1.0; 30% truncation |
 
-Classification: `Unknown` in effect tables is technically correct (no data). Description: operationalization gap, not model floor behavior.
+YES-bias signal: 73/73 parseable records returned YES, 0 returned NO. The model classifies all chains (intact + violated) as containing rule violations under native thinking. Classification: Null (no detection gap). Cost: ~$4.10.
 
 ---
 
@@ -95,7 +95,9 @@ Classification: `Unknown` in effect tables is technically correct (no data). Des
 
 **YELLOW** — All SPEC-required outputs are complete and validated. One open decision required:
 
-**Open decision: L18 L4** — Amendment #7 (rerun with max_tokens ≥ 512) or accept as untestable. Both options are compatible with publishing the other findings; L18 L4 was not among the Meaningful conditions.
+**~~Open decision: L18 L4~~ RESOLVED via Amendment #7:** L18 L4 retest at `max_tokens=4096` is complete (100/100 records, 27% truncation). Headline finding: **`flash_L18_L4` and `pro_L18_L4` classify as Null in all 3 universes** with `dr_violated = dr_intact = 1.0` on parseable records (73/73 YES, 0 NO). YES-bias signal is the substantive finding under native thinking. See [`../amendment_7/summary.md`](../amendment_7/summary.md) and [`../amendment_7/truncation_breakdown.md`](../amendment_7/truncation_breakdown.md).
+
+**New open decision: Amendment #7B?** A subset retest of the 27 truncated records at `max_tokens=8192` (~$3.50) would disambiguate whether truncation masks a real (small) positive effect on intact chains (33% truncation on intact vs. 19-28% on violated suggests possible asymmetry). Both authors to decide.
 
 **GREEN items (no further action needed):**
 - Three effect tables: complete, validated, ready for review
@@ -105,10 +107,12 @@ Classification: `Unknown` in effect tables is technically correct (no data). Des
 - Convention clarification: documented for write-up
 
 **Items for both-author discussion:**
-1. **L18 L4 decision** (Amendment #7 or accept as untestable)
-2. **L1/L2 redundancy** — L1 and L2 are functionally identical for this sample; both-author decision on how to present three-universe results when two are identical
-3. **pro_L18_L3 S6 pattern** — bimodal quartile effect (shorter responses show negative gap); decision on whether this warrants additional analysis
-4. **pro_L12_L3 Meaningful status** — depends on regex-only parsing of truncated JSON; both authors should decide whether to treat this separately from text-output conditions
+1. **Amendment #7 signoff** — sign Amendment #7 (L18 L4 retest, results in `amendment_7/`) and decide whether to merge into primary effect tables.
+2. **Amendment #7B?** — authorize a subset retest at `max_tokens=8192` of the 27 truncated records (~$3.50)?
+3. **L18 L4 framing** — Null with YES-bias is the technical finding; if both authors want a more interpretive framing for the write-up (e.g. "confounded — measures YES-bias, not detection capability"), that's a separate editorial call.
+4. **L1/L2 redundancy** — L1 and L2 are functionally identical for this sample; both-author decision on how to present three-universe results when two are identical.
+5. **pro_L18_L3 reasoning-depth-threshold pattern** — token-quartile analysis (`quartile_analysis/bimodal_summary.md`) supersedes Day 2 S6. Decision on whether this becomes a headline finding or a footnote in the write-up.
+6. **pro_L12_L3 Meaningful status** — depends on regex-only parsing of truncated JSON; both authors should decide whether to treat this separately from text-output conditions.
 
 ---
 

@@ -123,12 +123,21 @@ API applies `max_tokens` to total output (`reasoning_content` + `content`), not 
 as the SPEC assumed. The 64-token budget was entirely consumed by reasoning before any verdict
 could be emitted.
 
-**Amendment #7** retests L18 L4 at `max_tokens=4096` (other parameters unchanged). Pilots
-confirmed the methodology; the full retest is in progress at the time of this commit. The
-retest output is written to `pre-registration/amendment_7/` as a *parallel product* — it is
-not merged into primary effect tables without both-author signoff.
+**Amendment #7** retested L18 L4 at `max_tokens=4096` (other parameters unchanged). The full
+retest is complete (100 calls; cost ~$4.10).
 
-See [`pre-registration/amendments/amendment_7.md`](pre-registration/amendments/amendment_7.md) for the full amendment document.
+**Headline:** L18 L4 classifies as **Null in all 3 universes for both models**, with
+`dr_violated = dr_intact = 1.0` on parseable records. **73/73 parseable verdicts are YES, 0
+are NO** — a model YES-bias under native thinking, not a detection capability. 27% of
+records truncated at 4096 tokens (Flash 24%, Pro 30%); intact chains truncate at 33% vs.
+19–28% on violated, hinting at asymmetric reasoning cost.
+
+The retest output is written to `pre-registration/amendment_7/` as a *parallel product* — not
+merged into primary effect tables without both-author signoff. See
+[`pre-registration/amendment_7/summary.md`](pre-registration/amendment_7/summary.md) for the
+effect tables and [`pre-registration/amendment_7/truncation_breakdown.md`](pre-registration/amendment_7/truncation_breakdown.md)
+for the truncation diagnostic. Methodology amendment doc:
+[`pre-registration/amendments/amendment_7.md`](pre-registration/amendments/amendment_7.md).
 
 ---
 
@@ -159,7 +168,8 @@ All scripts are append-only with resume support (`parser_provenance.ndjson` keye
 | Day 2 post-validation (6 tasks) | Complete |
 | Quartile analysis (token-based, supersedes Day 2 S6 char-length) | Complete |
 | Amendment #7 pilots (max_tokens 2048, 4096) | Complete |
-| Amendment #7 full retest (100 calls) | In progress |
+| Amendment #7 full retest (100 calls at max_tokens=4096) | Complete |
+| Amendment #7B (subset retest at 8192, optional) | Pending decision |
 | Both-author signoff | Pending |
 
 ---
