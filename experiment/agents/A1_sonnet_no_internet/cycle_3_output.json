@@ -1,0 +1,32 @@
+{
+  "cycle": 3,
+  "summary": "Added three rules: (b) permanent-faint \u2192 positive HP later (unit_D fainted permanently but showed 100% HP); (d) same-unit UNAVAILABLE\u2192AVAILABLE in same turn (unit_B off-field and back same turn); (f) rapid double-UNAVAILABLE \u22642 steps (unit_A UNAVAILABLE twice with only 1 step between). Tested and rejected double-AVAILABLE rule (creates FPs on valid chains that show same unit AVAILABLE twice without UNAVAILABLE, which can occur legitimately in some chain formats).",
+  "iteration_test": {
+    "tp": 4,
+    "tn": 5,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889
+  },
+  "development": {
+    "tp": 12,
+    "tn": 15,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889
+  },
+  "validation": {
+    "tp": 13,
+    "tn": 3,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.765,
+    "f1": 0.867
+  },
+  "key_finding": "Validation recall improved from 0.588 (Cycle 1/2 baseline) to 0.765. All precision remains 1.0 across all sets."
+}

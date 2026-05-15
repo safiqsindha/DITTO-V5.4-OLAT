@@ -1,0 +1,6 @@
+{
+  "cycle": 4,
+  "summary": "Attempted temporal ordering rule: hp_unit_X at 0% in turn=T but UNAVAILABLE (permanent) in turn=T'>T. Caught one additional validation FN (gen9ou-2306563046: hp_unit_C at 0% in turn=1, faint event in turn=2). BUT discovered that a valid none chain (gen9ou-2286522581_p1_shuffled_1337) shows the exact same 1-turn delay pattern (hp_unit_B at 0% in turn=13, UNAVAILABLE permanent in turn=14). Rule is genuinely ambiguous \u2014 cannot distinguish valid chains from violations. Reverted to Cycle 3.",
+  "status": "REVERTED",
+  "key_finding": "Faint temporal order delay of 1 turn occurs in both valid and violated chains. Rule is unreliable."
+}
