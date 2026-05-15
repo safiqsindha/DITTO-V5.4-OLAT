@@ -1,4 +1,9 @@
 {
+  "__metadata": {
+    "s6_quartile_status": "DEPRECATED",
+    "s6_quartile_note": "s6_quartile values in this file are character-based boundaries from the Day 2 primary analysis pass. They have been superseded by token-based quartile boundaries computed post-hoc. Authoritative source: day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max columns). Summary interpretation: day_2/quartile_analysis/bimodal_summary.md. Do not use s6_quartile from this file for any quantitative quartile-boundary lookup.",
+    "s6_quartile_deprecated_since": "2026-05-15"
+  },
   "flash_L01_L1_L1": {
     "condition_id": "flash_L01_L1",
     "model": "deepseek-v4-flash",

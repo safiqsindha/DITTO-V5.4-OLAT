@@ -85,6 +85,11 @@ If review surfaces methodology questions → Amendment #6 acceptable. Pre-regist
 
 ## Day 0 — Chain Variant Preparation (Compute Only, No API)
 
+> **[ERRATA FLAG 1 — RESOLVED]** `day_0/day_0_completion_report.md` flagged that an earlier
+> draft of this section stated "68 × 50 × 2 = 6,800" (incorrectly multiplying the model
+> dimension twice). Current text reflects the correct figure: 64 conditions × n=50 chains =
+> 3,200 records (post-Amendment-6). No methodology change.
+
 **Goal:** Pre-compute deterministic chain variants for all 64 OLAT conditions (Amendment #6) × n=50 chains = 3,200 prompt/parameter records, ready for Day 1 batched execution.
 
 **Procedure:** Follow the 11-step deterministic procedure in SPEC §17 (Day 0 procedure, Amendment #4 C2-inline). Summary:
