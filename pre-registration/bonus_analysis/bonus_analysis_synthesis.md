@@ -1,8 +1,8 @@
 # Bonus Analysis Synthesis
 
-**Computed:** 2026-05-14  
-**Tests completed:** 1, 2, 3, 4, 6, 7, 8, 9  
-**Tests omitted:** 5, 10 (lower priority, not completed)
+**Computed:** 2026-05-14 / 2026-05-15  
+**Tests completed:** 1, 2, 3, 4, 5, 6, 7, 8, 9  
+**Tests omitted:** 10 (blocked — missing `phase3_results_v4.csv`)
 
 ---
 
@@ -24,9 +24,9 @@
 - In amendment_7, 100% of parseable records produce YES verdicts — a systematic L18_L4 YES-bias
 
 ### Data Missing
-- `Ditto-5.3-Pokemon Diag/pokemon-v1-symbolic/outputs/phase3_results_v4.csv` — absent (Test 8 partial)
+- `Ditto-5.3-Pokemon Diag/pokemon-v1-symbolic/outputs/phase3_results_v4.csv` — absent (Test 8 partial, Test 10 blocked)
 - `anchor_effects/observational_tests_summary.md` — absent (not needed for any test)
-- Tests 5 and 10 were not completed (lower priority, limited available time)
+- Test 10 blocked by missing pool data; Test 5 completed with 198 traces (not ~513 as specified — diagnostic records lacked `reasoning_content`)
 
 ---
 
@@ -52,6 +52,9 @@ No chain is "unstable" (H > 1.0). All YES rates fall in [0.082, 0.300] — well 
 
 ### Test 4: Failure Mode Coexistence
 FM1 (NO-floor in V4-Pro baseline) affects 43/50 chains (86%). FM2 (valley quartile) is unresolvable due to token-count boundary mismatch with the 50-chain subset. FM3 (confabulation in L18_L4) affects 15/50 intact chains (30%). The 14 FM1+FM3 co-occurring chains are all intact chains — they are correctly rejected in simple conditions but confabulated under native thinking. Only 5 chains escape FM1 (the 5 where V4-Pro said YES in the anti-detection baseline).
+
+### Test 5: Reasoning Topic Modeling
+TF-IDF + LSA clustering on 198 traces (100 L18 L4, 98 L18 L3). Cross-condition clustering trivially separates conditions by format/length (silhouette=0.136). Within-condition silhouettes are uniformly below 0.08 — all noise-level. Distinctive terms across clusters are chain-content leakage: the model quotes step labels verbatim, so TF-IDF separates by which chain is described rather than how the model reasons. One interpretable signal in L18 L4: shorter traces correlate with violated chains confidently detected, longer traces with harder/intact chains — but this is already captured by Tests 2 and 3. **Null finding: no meaningful reasoning strategy clusters exist in this corpus.** Reasoning text is not a viable routing signal for Mew.
 
 ### Test 2: Reasoning Depth Comparison
 L18 L4 (native thinking) reasoning is 3.7× longer, achieves 100% counter-evidence usage (vs 85.7%), and shows 65× more logical chain patterns than L18 L3 (text-prompt CoT). Despite this, accuracy is identical: 0.684 (L18 L3) vs 0.685 (L18 L4). Deeper reasoning does not improve detection rates. Flash generates longer reasoning than Pro under both L18 L3 and L18 L4, but Pro achieves comparable or slightly better accuracy.
@@ -114,6 +117,8 @@ Tests 3, 6, and 9 converge on a unified picture of why violation detection fails
 | `test_7_verdict_stability.md` | Test 7 | Complete |
 | `test_8_checker_characterization.md` | Test 8 | Partial (50 chains only) |
 | `test_9_complementarity.md` | Test 9 | Complete |
-| `test_6_models/logistic_regression.joblib` | Test 6 | Model file |
-| `test_6_models/random_forest.joblib` | Test 6 | Model file |
-| Tests 5, 10 | — | Not completed (lower priority) |
+| `test_5_reasoning_clusters.md` | Test 5 | Complete (null finding) |
+| `test_6_models/logistic_regression.joblib` | Test 6 | Model artifact |
+| `test_6_models/random_forest.joblib` | Test 6 | Model artifact |
+| `bonus.md` | All | Full per-test summary |
+| Test 10 | — | Blocked (missing `phase3_results_v4.csv`) |
