@@ -1,0 +1,23 @@
+{
+  "cycle": 2,
+  "summary": "Added permanent-unit-re-unavailable rule: if a unit with (permanent) faint status is subsequently marked UNAVAILABLE again, fire causal_incoherence. Caught gen9ou-2301944495 (unit_B permanent UNAVAILABLE \u2192 recover_in=0 UNAVAILABLE). Tested and rejected broader double-UNAVAILABLE rule (creates FPs on valid chains due to chain window missing intermediate AVAILABLE events).",
+  "iteration_test": {
+    "tp": 4,
+    "tn": 5,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889
+  },
+  "development": {
+    "tp": 12,
+    "tn": 15,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889
+  },
+  "key_finding": "Double-UNAVAILABLE for permanent-only is safe. Broader double-UNAVAILABLE creates FPs."
+}

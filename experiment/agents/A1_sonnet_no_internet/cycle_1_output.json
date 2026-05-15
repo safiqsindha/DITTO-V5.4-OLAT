@@ -1,0 +1,24 @@
+{
+  "cycle": 1,
+  "summary": "Initial implementation: hp_resurrection (0%\u2192>0%), PP monotone increase, causal_incoherence via active_pair and permanent-unit-revived.",
+  "iteration_test": {
+    "tp": 4,
+    "tn": 5,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.89
+  },
+  "development": {
+    "tp": 11,
+    "tn": 15,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1.0,
+    "recall": 0.733,
+    "f1": 0.845
+  },
+  "key_finding": "Precision perfect; missing 4 violated chains. All intact chains correct.",
+  "code_change": "Initial checker.py written."
+}
