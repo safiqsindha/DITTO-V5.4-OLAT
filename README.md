@@ -217,7 +217,25 @@ All scripts are append-only with resume support (`parser_provenance.ndjson` keye
 | Amendment #7 full retest (100 calls at max_tokens=4096) | Complete |
 | Amendment #7B (subset retest at 8192, optional) | Pending decision |
 | Bonus analysis battery (10 observational tests, zero API) | Complete (9/10; Test 10 blocked) |
+| **Phase A no-API batch (5 tasks)** | **Complete — see `phase-a-no-api/`** |
 | Both-author signoff | Pending |
+
+---
+
+## Phase A — No-API Experiment Batch
+
+Post-primary empirical batch. Five tasks completed 2026-05-15 without API calls. All outputs
+are parallel data products requiring both-author signoff before integration into primary results.
+
+See [`phase-a-no-api/README.md`](phase-a-no-api/README.md) for full details.
+
+| Task | Finding | Stop condition? |
+|------|---------|----------------|
+| **A1** Deployment-time predictor | AUC=0.907 (condition+baseline) vs 0.564 (condition-only) — baseline pre-screen required | Yes — AUC matches full model (gap=0.018). **Both-author attention.** |
+| **A2** PUBG marker identification | `eliminated_player` explicit field is primary candidate for anti-detection in clean chains | No — proceed to Phase 2B |
+| **A3** Self-consistency design | 20-chain sample selected (seed=42), L18 L3 at T=0.7 N=5, outcomes pre-registered | No |
+| **A4** Prompt robustness design | 4 variants designed, 20-chain sample (seed=43), outcomes pre-registered | No |
+| **A5** Errata audit | All 3 errata confirmed applied; SPEC hash matches `dbae94d…`; Amendment #7 signoff pending | No |
 
 ---
 
