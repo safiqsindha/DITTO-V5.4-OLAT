@@ -85,7 +85,20 @@ pre-registration/
 │   └── amendment_7.md                   # methodology amendment (DRAFT)
 ├── diagnostics/                         # exploratory + diagnostic runs (Diagnostic I, etc.)
 ├── decisions/                           # decision sheet
-└── scripts/                             # all executor + analysis scripts
+├── scripts/                             # all executor + analysis scripts
+└── bonus_analysis/                      # post-primary observational battery (zero API)
+    ├── bonus.md                         # full per-test summary (start here)
+    ├── bonus_analysis_synthesis.md      # cross-test synthesis + Mew implications
+    ├── test_1_confabulation_patterns.md
+    ├── test_2_reasoning_depth.md
+    ├── test_3_difficulty_stratification.md
+    ├── test_4_failure_coexistence.md
+    ├── test_5_reasoning_clusters.md
+    ├── test_6_predictor.md
+    ├── test_6_models/                   # serialized RF + LR classifiers (joblib)
+    ├── test_7_verdict_stability.md
+    ├── test_8_checker_characterization.md
+    └── test_9_complementarity.md
 ```
 
 ---
@@ -141,6 +154,39 @@ for the truncation diagnostic. Methodology amendment doc:
 
 ---
 
+## Bonus Analysis
+
+Post-primary observational analysis battery. Zero API cost — all findings from records already on disk.
+10 pre-specified tests covering confabulation patterns, reasoning depth, chain difficulty, failure mode
+coexistence, topic modeling, a detection-success predictor (ML), verdict stability, symbolic checker
+characterization, LLM-checker complementarity, and composition sensitivity.
+
+**9 of 10 tests complete.** Test 10 (composition sensitivity) is blocked by a missing pool data file
+(`phase3_results_v4.csv`). Test 5 (topic modeling) produced a null finding.
+
+**Top findings:**
+
+| Finding | Source |
+|---|---|
+| All 50 OLAT chains are exactly 15 steps — chain-length stratification is degenerate | Test 3 |
+| 31/32 violated chains are blind spots for both models (<40% DR across all conditions) | Test 3 |
+| Symbolic checker: precision=1.0, recall=0.941 on OLAT subset | Tests 8, 9 |
+| Checker covers 94.7% of LLM failures; LLM covers only 18.3% of checker failures | Test 9 |
+| Random Forest predictor: 84.7% accuracy, AUC=0.925; top feature = lever choice | Test 6 |
+| L18 L4 (native thinking) produces YES on 100% of parseable records — no specificity | Tests 1, 2 |
+| Deeper reasoning (3.7× longer, L18 L4) does not improve accuracy vs L18 L3 | Test 2 |
+| No chain achieves YES rate above 0.30 across all 64 conditions — strong NO-bias floor | Test 7 |
+
+**Architecture implication:** A checker-primary + LLM-secondary ensemble under L18-class conditions
+outperforms either alone. The bottleneck is representational (the chain format lacks LLM pattern-
+matching hooks), not reasoning depth. Condition choice (lever) matters more than chain properties.
+
+See [`pre-registration/bonus_analysis/bonus.md`](pre-registration/bonus_analysis/bonus.md) for the
+full per-test summary and [`pre-registration/bonus_analysis/bonus_analysis_synthesis.md`](pre-registration/bonus_analysis/bonus_analysis_synthesis.md)
+for cross-test synthesis and Mew architectural implications.
+
+---
+
 ## Reproducing the analysis
 
 ```bash
@@ -170,6 +216,7 @@ All scripts are append-only with resume support (`parser_provenance.ndjson` keye
 | Amendment #7 pilots (max_tokens 2048, 4096) | Complete |
 | Amendment #7 full retest (100 calls at max_tokens=4096) | Complete |
 | Amendment #7B (subset retest at 8192, optional) | Pending decision |
+| Bonus analysis battery (10 observational tests, zero API) | Complete (9/10; Test 10 blocked) |
 | Both-author signoff | Pending |
 
 ---
