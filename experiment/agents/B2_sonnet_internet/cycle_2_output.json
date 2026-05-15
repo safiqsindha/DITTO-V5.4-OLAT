@@ -1,0 +1,23 @@
+{
+  "cycle": 2,
+  "agent": "B2_sonnet_internet",
+  "key_change": "Added _check_own_faint_no_perm: if SubGoalTransition trigger=own_faint appears but no UNAVAILABLE(permanent) event in window, flag as causal_incoherence. Empirical validation: 132 sampled chains with own_faint; 34 without perm_faint were all violated; 0 valid chains lacked perm_faint when own_faint present.",
+  "internet_contribution": "Internet confirmed that in Pokemon competitive mechanics, trigger=own_faint always corresponds to a permanent ToolAvailability UNAVAILABLE event — the fainted unit becomes permanently unavailable. Chains that record a faint trigger without the corresponding state change are causally inconsistent. This rule would not have been confidently derived from training data alone without internet confirmation of the trigger semantics.",
+  "iteration_test": {
+    "n": 10,
+    "TP": 4, "TN": 5, "FP": 0, "FN": 1,
+    "precision": 1.0, "recall": 0.8, "f1": 0.889,
+    "note": "No change vs Cycle 1 on iteration_test (the new FN was not in this set)"
+  },
+  "development": {
+    "n": 30,
+    "TP": 13, "TN": 15, "FP": 0, "FN": 2,
+    "precision": 1.0, "recall": 0.867, "f1": 0.929,
+    "improvement_vs_cycle_1": "+1 TP (gen9ou-2310254076), +0.040 F1",
+    "fn_chains": [
+      {"chain_id": "gen9ou-2306146403_p1_shuffled_1337", "violation_type": "multiple", "diagnosis": "double-UNAVAILABLE gap=5 (irreducible); no own_faint trigger; no active_pair data"},
+      {"chain_id": "gen9ou-2287639343_p2_shuffled_1337", "violation_type": "hp_resurrection", "diagnosis": "window-limited: 0%->positive transition outside visible 15-step window"}
+    ]
+  },
+  "decision": "FINAL — Cycle 3 attempts tested; no further safe rules available. Remaining FNs are irreducible."
+}

@@ -234,5 +234,601 @@
       ]
     }
   ],
-  "note": "Reduced-scale validation (n=20). Full experiment requires 19,428-chain corpus."
+  "note": "Reduced-scale validation (n=20). Full experiment requires 19,428-chain corpus.",
+  "B2_sonnet_internet": {
+    "agent": "B2_sonnet_internet",
+    "model": "claude-sonnet-4-6",
+    "internet_access": true,
+    "cycles_used": 2,
+    "final_cycle": "cycle_2",
+    "sets": {
+      "iteration_test": {
+        "n": 10,
+        "TP": 4,
+        "TN": 5,
+        "FP": 0,
+        "FN": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "per_chain": [
+          {
+            "chain_id": "gen9ou-2326066086_p2_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2323855766_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2312002915_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2286522581_p1_shuffled_1337",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2341946701_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2330862666_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2272010071_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "pp_monotone_violation",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2310556760_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2287639343_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "hp_resurrection",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2272614714_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          }
+        ]
+      },
+      "development": {
+        "n": 30,
+        "TP": 13,
+        "TN": 15,
+        "FP": 0,
+        "FN": 2,
+        "precision": 1.0,
+        "recall": 0.867,
+        "f1": 0.929,
+        "per_chain": [
+          {
+            "chain_id": "gen9ou-2278300586_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2321486759_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2262855067_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2348078225_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2306146403_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "multiple",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2310254076_p2_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2326066086_p2_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2343591826_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2301379516_p1_shuffled_42",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2278537373_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2286522581_p1_shuffled_1337",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2354144810_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2310556760_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2273536349_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2272614714_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2272010071_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "pp_monotone_violation",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2328038098_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2317659387_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2323855766_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2260297169_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "hp_resurrection",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2330862666_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2303002268_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "hp_resurrection",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2312002915_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2320790123_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2287639343_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "hp_resurrection",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2321922786_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2301944495_p1_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2338779384_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2276761872_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2341946701_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "n": 20,
+        "TP": 13,
+        "TN": 3,
+        "FP": 0,
+        "FN": 4,
+        "precision": 1.0,
+        "recall": 0.765,
+        "f1": 0.867,
+        "per_chain": [
+          {
+            "chain_id": "gen9ou-2343602002_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2272614714_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2320688421_p1_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "causal_incoherence",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2275367426_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "hp_resurrection",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2327278602_p2",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2283533709_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "multiple",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2327376263_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2287824764_p1",
+            "gt": "NO",
+            "pred": "NO",
+            "outcome": "TN",
+            "violation_type": "none",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2353740572_p1_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "pp_monotone_violation"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2334711641_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "causal_incoherence",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2270600845_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "monotone_increase",
+            "triggered": [
+              "pp_monotone_violation",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2261012168_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "causal_incoherence",
+            "triggered": [
+              "pp_monotone_violation"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2320109494_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "monotone_increase",
+            "triggered": [
+              "pp_monotone_violation"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2345018884_p1_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2272252150_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2272363626_p2_shuffled_7919",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2306563046_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "NO",
+            "outcome": "FN",
+            "violation_type": "multiple",
+            "triggered": []
+          },
+          {
+            "chain_id": "gen9ou-2347015993_p1_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2287788376_p1_shuffled_42",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          },
+          {
+            "chain_id": "gen9ou-2291273479_p2_shuffled_1337",
+            "gt": "YES",
+            "pred": "YES",
+            "outcome": "TP",
+            "violation_type": "multiple",
+            "triggered": [
+              "hp_resurrection",
+              "causal_incoherence"
+            ]
+          }
+        ]
+      }
+    }
+  }
 }

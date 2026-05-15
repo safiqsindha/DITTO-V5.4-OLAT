@@ -1,9 +1,10 @@
-# Experiment Findings — Agent A1 (Sonnet, No Internet)
+# Experiment Findings — Agents A1 and B2
 
-## Status: Phase 1 partial — one of six builder agents complete
+## Status: Phase 1 partial — two of six builder agents complete
 
-Only Agent A1 has run. Full cross-agent synthesis requires A2, B1, B2, B3, C1.
-This document records A1 findings and will be updated as other agents complete.
+Agents A1 (Sonnet, no internet) and B2 (Sonnet, internet access) have run.
+Full cross-agent synthesis requires A2, B1, B3, C1.
+This document records A1 and B2 findings and will be updated as other agents complete.
 
 ---
 
@@ -32,36 +33,69 @@ This document records A1 findings and will be updated as other agents complete.
 
 ---
 
-## What A1 Built
+## B2 Result: Moderate-to-Strong Success (matches A1 on validation)
 
-A rule-based symbolic checker with 8 detection rules across 3 categories:
+**Final validation performance (n=20, held-out set):**
+
+| Metric | Value | Threshold |
+|--------|-------|-----------|
+| Precision | **1.000** | Strong >0.85 ✓ |
+| Recall | **0.765** | Moderate >0.60 ✓, Strong >0.80 ✗ |
+| F1 | **0.867** | — |
+| False positives | **0** | — |
+
+**Development set performance (n=30):**
+
+| Agent | Dev Precision | Dev Recall | Dev F1 |
+|-------|--------------|------------|--------|
+| A1 | 1.000 | 0.800 | 0.889 |
+| B2 | 1.000 | **0.867** | **0.929** |
+
+B2 is superior on the development set (F1=0.929 vs 0.889) due to the
+`own_faint` consistency rule. Validation performance is identical because the
+chains where this rule fires in validation were already caught by other rules.
+
+---
+
+## What B2 Built (Cycle 2 — 9 rules)
+
+Same core rules as A1 plus two internet-informed enhancements:
 
 ### hp_resurrection
 - HP of unit goes from 0.0% to >0% in a later step
-- Unit marked `(permanent)` UNAVAILABLE but HP later shows >0%
+- Unit marked `(permanent)` UNAVAILABLE but hp_unit_X later >0%
 
-### pp_monotone_violation
-- PP resource value increases between observations
+### pp_monotone_violation (generalized from A1)
+- Any resource with `decay=monotone_decrease` annotation must be non-increasing
+- Also covers `pp_action_*` resources without annotation
+- A1 checked only `pp_action_*` prefix; B2 also covers `match_time_remaining`
+  and any future annotated resource
 
 ### causal_incoherence
 - Unit appears in `active_pair` while in UNAVAILABLE state
 - Permanently fainted unit receives a subsequent AVAILABLE event
 - Permanently fainted unit is marked UNAVAILABLE a second time
 - Unit goes UNAVAILABLE → AVAILABLE within the same battle turn
-- Unit goes UNAVAILABLE → UNAVAILABLE again within 2 steps (rapid double)
+- Unit UNAVAILABLE → UNAVAILABLE within 2 steps (rapid double)
+- **NEW (B2 only):** `trigger=own_faint` appears but no UNAVAILABLE(permanent) in window
 
 ---
 
-## Iteration History
+## A1 Iteration History
 
 | Cycle | Change | Dev F1 | Val F1 |
 |-------|--------|--------|--------|
 | 1 | Core rules: hp_resurrection (0→>0), PP monotone, causal_incoherence via active_pair + permanent_revived | 0.845 | — |
 | 2 | Added permanent-unit-re-unavailable; rejected broad double-UNAVAILABLE (FP risk) | 0.889 | — |
 | 3 | Added permanent-faint+HP>0, same-turn UNAVAIL→AVAIL, rapid-double-UNAVAILABLE ≤2 steps | 0.889 | **0.867** |
-| 4 (reverted) | Faint temporal order (hp=0 in turn T, faint event in turn T+1) — identical pattern appears in valid chains; unreliable | — | — |
+| 4 (reverted) | Faint temporal order (hp=0 in turn T, faint event in turn T+1) — identical pattern in valid chains | — | — |
 
-Precision stayed at 1.0 throughout all accepted cycles.
+## B2 Iteration History
+
+| Cycle | Change | Dev F1 | Val F1 |
+|-------|--------|--------|--------|
+| 1 | Generalized monotone rule + full causal_incoherence suite from A1 | 0.889 | — |
+| 2 | Added own_faint consistency rule (trigger=own_faint without perm_faint) | **0.929** | **0.867** |
 
 ---
 
@@ -69,68 +103,68 @@ Precision stayed at 1.0 throughout all accepted cycles.
 
 ### Finding 1: LLM can build a working symbolic checker from constraint chains alone
 
-Agent A1 — working only from 30 example chains and rule category descriptions,
-with no internet access — produced a checker that meets the moderate success
-threshold and approaches strong success on precision. The checker was built
-entirely through pattern analysis of the chain text format and application of
-Pokemon game knowledge embedded in training data.
+Both A1 (no internet) and B2 (internet) produced checkers meeting the moderate
+success threshold with precision 1.0. Both converged on the same core rules
+through analysis of chain text patterns and Pokemon game knowledge.
 
-### Finding 2: Precision is easier to achieve than recall
+### Finding 2: Internet access contributes one measurable rule beyond training knowledge
 
-The A1 checker reached precision 1.0 immediately (Cycle 1) and maintained it
-through all revisions. Recall improved gradually across cycles (0.73 → 0.80 on
-development). The conservative, rule-based approach naturally biases toward
-precision: rules only fire when a clear physical impossibility is present.
+B2 found the `own_faint` consistency rule from internet research on battle
+mechanics — specifically that `trigger=own_faint` must always be accompanied by a
+permanent UNAVAILABLE event. This rule improved dev F1 by 0.040. Validation F1 was
+unchanged because the new rule's detections there were redundant with existing rules.
 
-This has implications for Mew: an LLM-built checker is likely to have very few
-false alarms (high precision) but may miss some violations (moderate recall).
-The risk profile favors deployment alongside the existing symbolic checker rather
-than as a standalone replacement.
+The generalized monotone rule (covering all `decay=monotone_decrease` resources) is
+architecturally stronger than A1's pp-specific rule but produced no additional detections
+on these test sets — the only extra resource (`match_time_remaining`) has no violations
+in the current chain pool.
 
-### Finding 3: Three irreducible failure modes from the text format
+Internet access also prevented a potential false positive rule: confirming HP can
+legitimately increase from non-zero prevented over-broad resurrection detection.
 
-1. **Window limitation:** hp_resurrection sometimes occurs outside the 15-step
-   chain window. The 0%→>0% pattern is not visible in the window excerpt.
+### Finding 3: Precision is easier to achieve than recall
 
+Both agents reached precision 1.0 immediately (Cycle 1) and maintained it. The
+conservative rule-based approach biases naturally toward precision: rules fire only
+on physical impossibilities. This has implications for deployment: LLM-built checkers
+have very few false alarms but may miss some violations.
+
+### Finding 4: Three irreducible failure modes from the text format
+
+1. **Window limitation:** hp_resurrection sometimes occurs outside the 15-step window.
 2. **Missing active_pair data:** Causal incoherence is cleanly detectable when
-   `active_pair: own=X opp=Y` annotations are present. Some chain format variants
-   omit this field; violations in those chains are undetectable without knowing
-   which unit is actively battling.
+   `active_pair: own=X opp=Y` annotations are present; absent in some format variants.
+3. **Non-permanent double-UNAVAILABLE beyond 2 steps:** Risky at wider thresholds
+   (threshold 5 creates 3 FPs on valid none chains).
 
-3. **Non-permanent double-UNAVAILABLE beyond 2 steps:** A unit going
-   UNAVAILABLE → UNAVAILABLE without AVAILABLE between is suspicious, but valid
-   chains also exhibit this pattern when the intermediate AVAILABLE event falls
-   outside the window. Detecting this beyond a 2-step proximity threshold creates
-   false positives.
+Internet access did not resolve any of these — they are inherent to the 15-step
+window format and the presence/absence of the `active_pair` field.
 
-### Finding 4: The `multiple` violation type is the hardest category
+### Finding 5: The `multiple` violation type is the hardest category
 
-12/15 multiple-violation chains were caught in development (80%); 9/11 in
-validation (82%). The missed chains tend to contain violations that fall into
-the irreducible failure modes above — causal incoherence requiring active_pair,
-or window-limited hp_resurrection — rather than detectable combinations.
+Development: A1 10/12 (83%), B2 11/12 (92%). Validation: both 9/11 (82%).
+The missed chains contain violations that fall into the irreducible failure modes
+above rather than detectable combinations. B2's own_faint rule successfully rescued
+one multiple-violation chain (gen9ou-2310254076) on dev.
 
-### Finding 5: Training data knowledge was sufficient for core rules
+### Finding 6: Training data knowledge was sufficient for all core rules
 
-The agent relied entirely on training-data knowledge of Pokemon mechanics:
-PP only decreases, fainted units cannot act, HP cannot spontaneously increase
-from zero. These rules were applied correctly without internet access.
-The open question (answered by B2 comparison) is whether internet access
-would have identified additional rule patterns or edge cases that A1 missed.
+A1 correctly derived PP monotonicity, faint permanence, and causal ordering rules
+from training knowledge alone. B2's internet access improved one edge-case rule
+(own_faint consistency) and prevented one potential false-positive rule (HP increase),
+but did not identify any fundamentally new violation type that A1 missed.
 
 ---
 
 ## Environment Caveats
 
-This run used 50 unique chains (from `pre-registration/chain_variants/`), not
-the full 19,428-chain corpus. The validation set is n=20, not n=500.
-Statistical confidence is limited; results should be reproduced on the full
-corpus when data is available.
+Both runs used 50 unique chains (from `pre-registration/chain_variants/`), not
+the full 19,428-chain corpus. The validation set is n=20, not n=500. Statistical
+confidence is limited; results should be reproduced on the full corpus when available.
 
-The reduced chain pool also means the validation set has an imbalanced violation
-distribution (11 of 17 violated chains are `multiple`). Performance on rarer
-violation types (hp_resurrection, monotone_increase, causal_incoherence in
-isolation) is less well-characterized.
+The chain pool also means the validation set has an imbalanced violation distribution
+(11 of 17 violated chains are `multiple`). Performance on rarer violation types is
+less well-characterized.
 
 ---
 
@@ -139,7 +173,7 @@ isolation) is less well-characterized.
 | Agent | Status | Adds |
 |-------|--------|------|
 | A1 Sonnet no-internet | **Complete** | Baseline |
-| B2 Sonnet + internet | Ready to run | Isolates internet contribution at Sonnet tier |
+| B2 Sonnet + internet | **Complete** | Isolates internet contribution at Sonnet tier |
 | A2 Haiku no-internet | Needs separate session | Capability tier comparison |
 | B1 Opus + internet | Needs separate session | Top-tier benchmark |
 | B3 Haiku + internet | Needs separate session | Capability tier comparison |
