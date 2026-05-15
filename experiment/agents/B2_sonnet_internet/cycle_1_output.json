@@ -1,0 +1,25 @@
+{
+  "cycle": 1,
+  "agent": "B2_sonnet_internet",
+  "key_change": "Initial rules: generalized monotone decrease (all decay=monotone_decrease resources, not just pp_action_*), combined hp_resurrection rule (0->positive + permanent_faint+positive_hp), full causal_incoherence suite from A1",
+  "internet_contribution": "Generalized _check_monotone_decrease to cover match_time_remaining and any other annotated monotone resource; confirmed HP can legitimately increase from non-zero (no false positive risk from healing); confirmed PP never increases in competitive",
+  "iteration_test": {
+    "n": 10,
+    "TP": 4, "TN": 5, "FP": 0, "FN": 1,
+    "precision": 1.0, "recall": 0.8, "f1": 0.889,
+    "fn_chains": [
+      {"chain_id": "gen9ou-2287639343_p2_shuffled_1337", "violation_type": "hp_resurrection", "diagnosis": "window-limited: 0%->positive transition outside visible 15-step window"}
+    ]
+  },
+  "development": {
+    "n": 30,
+    "TP": 12, "TN": 15, "FP": 0, "FN": 3,
+    "precision": 1.0, "recall": 0.8, "f1": 0.889,
+    "fn_chains": [
+      {"chain_id": "gen9ou-2306146403_p1_shuffled_1337", "violation_type": "multiple", "diagnosis": "double-UNAVAILABLE gap=5 (threshold 2 safe; threshold 5 creates 3 FPs on none chains); no active_pair data"},
+      {"chain_id": "gen9ou-2310254076_p2_shuffled_42", "violation_type": "multiple", "diagnosis": "own_faint trigger without permanent faint event — potential Cycle 2 rule"},
+      {"chain_id": "gen9ou-2287639343_p2_shuffled_1337", "violation_type": "hp_resurrection", "diagnosis": "window-limited"}
+    ]
+  },
+  "decision": "keep — matches A1 Cycle 1 baseline; cycle 2 will add own_faint consistency rule"
+}
