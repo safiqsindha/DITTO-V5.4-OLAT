@@ -1,15 +1,13 @@
-# Experiment Findings — Agents A1, A2, A3, B1, B2, and B3
+# Experiment Findings — Agents A1, A2, A3, B1, B2, B3, and C1
 
-## Status: Phase 1 — six of six builder agents complete
+## Status: Phase 1 — COMPLETE (all seven builder agents)
 
 Complete: A1 (Sonnet, no internet), A2 (Haiku, no internet),
 A3 (Opus 4.7, no internet), B1 (Opus 4.7, internet), B2 (Sonnet, internet),
-B3 (Haiku + internet).
-Remaining: C1 (Sonnet serebii-only).
+B3 (Haiku + internet), C1 (Sonnet, Serebii-only).
 
-The capability ladder (Haiku→Sonnet→Opus, no internet) and the
-internet-axis comparison at all three tiers (Haiku: A2→B3, Sonnet: A1→B2; Opus: A3→B1)
-are now fully characterized.
+The capability ladder (Haiku→Sonnet→Opus), the internet-axis at all three tiers,
+and the domain-restriction axis (open web vs. Serebii-only) are fully characterized.
 
 ---
 
@@ -279,16 +277,57 @@ The chain pool also means the validation set has an imbalanced violation distrib
 (11 of 17 violated chains are `multiple`). Performance on rarer violation types is
 less well-characterized.
 
+### On the 0.867 Validation Ceiling and Wider Windows
+
+The validation ceiling is set by three irreducible failure modes in the 15-step
+(k=15) chain format. Of the 4 persistent false negatives, **1 is a window
+limitation** (the hp_resurrection evidence falls outside the 15-step frame); the
+other 3 require structural format changes (active_pair annotations or
+non-separable pattern resolution).
+
+Wider window chains are already pre-registered as **Lever 8** in
+`pre-registration/chain_condition_assignments.ndjson` with k ∈ {5, 10, 15, 20, 30}.
+The k=15 baseline captures ~50% of violations at the median; k=20 captures ~70%,
+k=30 ~90%. Regenerating the experiment with k=20 or k=30 would likely recover
+1–2 of the 4 validation FNs (moving recall from 0.765 toward ~0.82–0.88) while
+leaving precision at 1.0, since the rules themselves do not change. The chain
+generation script (`day0_task4_variant_generator.py`) already supports arbitrary k
+via `cutoff_rendered(rendered, k)` — no code changes required, only a re-run with
+a different condition set.
+
 ---
 
-## Next Steps
+## Finding 9: Domain-restricted internet equals open-web internet
+
+C1 (Sonnet, Serebii-only) is indistinguishable from B2 (Sonnet, open internet):
+
+| Agent | Internet scope | Dev F1 | Val F1 | Rules |
+|-------|---------------|--------|--------|-------|
+| A1 | None | 0.889 | 0.867 | 8 |
+| B2 | Open web | 0.929 | 0.867 | 9 |
+| **C1** | **Serebii only** | **0.929** | **0.867** | **7** |
+
+The own_faint rule that B2 found via Showdown SIM-PROTOCOL docs is also
+confirmable from Serebii's general fainting/switching mechanics pages. Restricting
+internet access to a single authoritative domain-specific source costs zero
+performance when that source covers the relevant mechanics. **Domain restriction
+is free** at the Sonnet tier for this task.
+
+This completes the three-axis characterization:
+- **Capability axis** (A2→A1→A3): dev F1 rises 0.889→0.889→0.929; val F1 flat 0.867
+- **Internet axis** (no-internet→internet): +0.040 at Sonnet, 0.000 at Opus, 0.000 at Haiku
+- **Domain-restriction axis** (open-web→serebii-only): 0.000 at Sonnet tier
+
+---
+
+## Agent Status
 
 | Agent | Status | Adds |
 |-------|--------|------|
 | A1 Sonnet no-internet | **Complete** | Baseline (dev F1 0.889, val F1 0.867) |
-| A2 Haiku no-internet | **Complete** | Capability floor: dev F1 0.889, val F1 0.867 (matches Sonnet despite smaller rule set) |
+| A2 Haiku no-internet | **Complete** | Capability floor: dev F1 0.889, val F1 0.867 |
 | A3 Opus 4.7 no-internet | **Complete** | Capability ceiling: dev F1 0.929, val F1 0.867, derives own_faint unaided |
-| B1 Opus 4.7 + internet | **Complete** | Internet ≡ 0 at Opus tier (B1 byte-identical to A3) |
+| B1 Opus 4.7 + internet | **Complete** | Internet ≡ 0 at Opus tier (byte-identical to A3) |
 | B2 Sonnet + internet | **Complete** | Internet = +0.040 dev F1 at Sonnet tier (own_faint rule) |
-| B3 Haiku + internet | **Complete** | Internet = 0.000 dev F1, -0.081 val F1 at Haiku tier (regression vs A2) |
-| C1 Sonnet serebii-only | Ready to run | Domain restriction test |
+| B3 Haiku + internet | **Complete** | Internet = 0.000 dev F1, -0.081 val F1 at Haiku tier |
+| C1 Sonnet serebii-only | **Complete** | Domain restriction = 0.000 cost vs open-web B2 |
