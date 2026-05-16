@@ -1,8 +1,8 @@
 # Amendment #7 — Lever 18 L4 Retest with Raised Token Budget
 
 **SPEC parent hash:** `dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8` (locked at Amendment #6)
-**Author(s):** to be signed by both authors
-**Status:** RETEST COMPLETE — pending both-author signoff
+**Author(s):** Safiq Sindha (SS), Myriam Sindha (MS)
+**Status:** SIGNED OFF — both authors approved 2026-05-16 (retest complete; YES-bias finding accepted)
 **Generated:** 2026-05-13
 **Retest completed:** 2026-05-13 22:16 PT (100/100 records, cost ~$4.10)
 
@@ -132,9 +132,9 @@ The amendment is **not** a SPEC hash change. The parent SPEC (hash `dbae94d…`)
 ## 8. Signoff Block
 
 ```
-Author 1 signoff:    [ ]   Date: __________   Notes: ____________________
-Author 2 signoff:    [ ]   Date: __________   Notes: ____________________
-Merged to primary:   [ ]   Date: __________   By:    ____________________
+Author 1 signoff:    [x] Safiq Sindha (SS)   Date: 2026-05-16   Notes: Retest reviewed; root cause (total-output max_tokens) and YES-bias finding accepted. L18 L4 = Null/biased.
+Author 2 signoff:    [x] Myriam Sindha (MS)  Date: 2026-05-16   Notes: Concur. YES-bias under native thinking confirmed; classification stands.
+Merged to primary:   [ ]   Date: __________   By:    ____________________   (signoff complete — merge into primary tables is now UNBLOCKED but not yet performed; separate explicit step)
 ```
 
 ---
