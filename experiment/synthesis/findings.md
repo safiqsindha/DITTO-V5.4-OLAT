@@ -1,10 +1,10 @@
-# Experiment Findings — Agents A1 and B2
+# Experiment Findings — Agents A1, A2, and B2
 
-## Status: Phase 1 partial — two of six builder agents complete
+## Status: Phase 1 partial — three of six builder agents complete
 
-Agents A1 (Sonnet, no internet) and B2 (Sonnet, internet access) have run.
-Full cross-agent synthesis requires A2, B1, B3, C1.
-This document records A1 and B2 findings and will be updated as other agents complete.
+Agents A1 (Sonnet, no internet), A2 (Haiku, no internet), and B2 (Sonnet, internet access) have run.
+Full cross-agent synthesis requires B1 (Opus + internet), B3 (Haiku + internet), C1 (Sonnet serebii-only).
+This document records findings through A2 and will be updated as other agents complete.
 
 ---
 
@@ -30,6 +30,33 @@ This document records A1 and B2 findings and will be updated as other agents com
 | hp_resurrection | 1 | 0 | 0%* |
 
 *Single-sample; hp_resurrection was detected correctly in other chain subsets.
+
+---
+
+## A2 Result: Moderate-to-Strong Success (matches A1/B2 on validation)
+
+**Final validation performance (n=20, held-out set):**
+
+| Metric | Value | Threshold |
+|--------|-------|-----------|
+| Precision | **1.000** | Strong >0.85 ✓ |
+| Recall | **0.765** | Moderate >0.60 ✓, Strong >0.80 ✗ |
+| F1 | **0.867** | — |
+| False positives | **0** | — |
+
+**Per-category accuracy on validation set:**
+
+| Violation type | n | Correct | Accuracy |
+|----------------|---|---------|----------|
+| none (intact) | 3 | 3 | 100% |
+| multiple | 11 | 9 | 82% |
+| hp_resurrection | 3 | 2 | 67% |
+| causal_incoherence | 3 | 0 | 0% |
+
+**Development set performance (n=30):**
+- Precision: 1.000, Recall: 0.733, F1: 0.846
+
+A2 achieves identical validation performance to A1 and B2 (P=1.0, R=0.765, F1=0.867) using a more conservative rule set (5 rules vs A1's 8). Haiku trades slightly lower development recall (0.733 vs A1's 0.800) for zero false positives across both sets.
 
 ---
 
@@ -147,7 +174,16 @@ The missed chains contain violations that fall into the irreducible failure mode
 above rather than detectable combinations. B2's own_faint rule successfully rescued
 one multiple-violation chain (gen9ou-2310254076) on dev.
 
-### Finding 6: Training data knowledge was sufficient for all core rules
+### Finding 6: Haiku-tier reasoning is capability-sufficient for constraint checking
+
+A2 (Haiku, no internet) achieves identical validation performance to A1 (Sonnet, no internet):
+- Val precision: 1.000 (both)
+- Val recall: 0.765 (both)
+- Val F1: 0.867 (both)
+
+Haiku accomplishes this with a more conservative 5-rule set vs Sonnet's 8-rule set, trading some development-set recall (0.733 vs 0.800) for zero false positives. The result suggests that constraint violation detection does not require frontier models — smaller models can achieve strong performance through more careful rule construction.
+
+### Finding 7: Training data knowledge was sufficient for all core rules
 
 A1 correctly derived PP monotonicity, faint permanence, and causal ordering rules
 from training knowledge alone. B2's internet access improved one edge-case rule
@@ -173,8 +209,8 @@ less well-characterized.
 | Agent | Status | Adds |
 |-------|--------|------|
 | A1 Sonnet no-internet | **Complete** | Baseline |
-| B2 Sonnet + internet | **Complete** | Isolates internet contribution at Sonnet tier |
-| A2 Haiku no-internet | Needs separate session | Capability tier comparison |
+| A2 Haiku no-internet | **Complete** | Capability tier comparison: Haiku matches Sonnet on validation |
+| B2 Sonnet + internet | **Complete** | Isolates internet contribution at Sonnet tier (+0.040 dev F1) |
 | B1 Opus + internet | Needs separate session | Top-tier benchmark |
-| B3 Haiku + internet | Needs separate session | Capability tier comparison |
+| B3 Haiku + internet | Needs separate session | Internet contribution at Haiku tier |
 | C1 Sonnet serebii-only | Ready to run | Domain restriction test |
