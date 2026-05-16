@@ -1,10 +1,14 @@
-# Experiment Findings — Agents A1, A2, and B2
+# Experiment Findings — Agents A1, A2, A3, B1, and B2
 
-## Status: Phase 1 partial — three of six builder agents complete
+## Status: Phase 1 — five of six builder agents complete
 
-Agents A1 (Sonnet, no internet), A2 (Haiku, no internet), and B2 (Sonnet, internet access) have run.
-Full cross-agent synthesis requires B1 (Opus + internet), B3 (Haiku + internet), C1 (Sonnet serebii-only).
-This document records findings through A2 and will be updated as other agents complete.
+Complete: A1 (Sonnet, no internet), A2 (Haiku, no internet),
+A3 (Opus 4.7, no internet), B1 (Opus 4.7, internet), B2 (Sonnet, internet).
+Remaining: B3 (Haiku + internet), C1 (Sonnet serebii-only).
+
+The capability ladder (Haiku→Sonnet→Opus, no internet) and the
+internet-axis comparison at two tiers (Sonnet: A1→B2; Opus: A3→B1)
+are now fully characterized.
 
 ---
 
@@ -59,6 +63,30 @@ This document records findings through A2 and will be updated as other agents co
 A2 achieves identical validation performance to A1 and B2 (P=1.0, R=0.765, F1=0.867) using a more conservative rule set (5 rules vs A1's 8). Haiku trades slightly lower development recall (0.733 vs A1's 0.800) for zero false positives across both sets.
 
 ---
+
+## A3 Result: Strong Success (Opus 4.7, no internet — best dev F1)
+
+**Performance:** Dev P=1.000 R=0.867 F1=**0.929** | Val P=1.000 R=0.765 F1=0.867
+
+A3 implements 7 rules and is the **best development-set performer of all
+no-internet agents**, beating A1 (0.889) and A2 (0.846). It matches B2's
+dev F1 (0.929) **without internet access** — max-effort Opus derived the
+own_faint consistency rule (the rule B2 needed web research for) purely by
+pattern induction over the 30 development chains. It also fixes the
+resetting-window own_faint bug (uses the global form: own_faint present +
+zero permanents anywhere) that produced false positives in the Haiku run.
+
+## B1 Result: Strong Success (Opus 4.7, internet — identical to A3)
+
+**Performance:** Dev P=1.000 R=0.867 F1=**0.929** | Val P=1.000 R=0.765 F1=0.867
+
+B1 is **behaviorally identical to A3 on every metric, set, and chain**.
+Three targeted web searches confirmed all 7 rules Opus had already derived
+and surfaced **no new pattern**. Internet's marginal contribution at the
+Opus tier is exactly **0.000 dev F1 / 0.000 val F1** — versus +0.040 dev F1
+at the Sonnet tier (B2). Internet access and model capability are
+**substitutes, not complements**: the stronger the model, the less internet
+adds. At the frontier it adds nothing for this domain.
 
 ## B2 Result: Moderate-to-Strong Success (matches A1 on validation)
 
@@ -174,21 +202,53 @@ The missed chains contain violations that fall into the irreducible failure mode
 above rather than detectable combinations. B2's own_faint rule successfully rescued
 one multiple-violation chain (gen9ou-2310254076) on dev.
 
-### Finding 6: Haiku-tier reasoning is capability-sufficient for constraint checking
+### Finding 6: Development F1 scales cleanly with capability; validation F1 is format-capped
 
-A2 (Haiku, no internet) achieves identical validation performance to A1 (Sonnet, no internet):
-- Val precision: 1.000 (both)
-- Val recall: 0.765 (both)
-- Val F1: 0.867 (both)
+The no-internet capability ladder (A2 Haiku → A1 Sonnet → A3 Opus 4.7):
 
-Haiku accomplishes this with a more conservative 5-rule set vs Sonnet's 8-rule set, trading some development-set recall (0.733 vs 0.800) for zero false positives. The result suggests that constraint violation detection does not require frontier models — smaller models can achieve strong performance through more careful rule construction.
+| Metric | A2 Haiku | A1 Sonnet | A3 Opus 4.7 |
+|--------|----------|-----------|-------------|
+| Rules | 5 | 8 | 7 |
+| Dev F1 | 0.846 | 0.889 | **0.929** |
+| Val F1 | 0.867 | 0.867 | 0.867 |
 
-### Finding 7: Training data knowledge was sufficient for all core rules
+Development F1 rises monotonically with model capability (0.846 → 0.889 →
+0.929), entirely as **recall gain at fixed precision 1.0** — stronger models
+find more valid rules without adding false positives. **Validation F1 is
+flat at 0.867 across all three tiers.** The validation ceiling is set by
+three irreducible text-format failure modes, not by model capability. Even
+the smallest model (Haiku) reaches the validation ceiling; even the largest
+(Opus, max effort) cannot exceed it. Capability buys development-set
+robustness, not a higher validation ceiling.
+
+### Finding 7: Internet access and model capability are substitutes, not complements
+
+The internet axis measured at two capability tiers:
+
+| Tier | no internet → + internet | Δ Rules | Δ Dev F1 |
+|------|--------------------------|---------|----------|
+| Sonnet | A1 → B2 | +1 | **+0.040** |
+| Opus 4.7 | A3 → B1 | **0** | **0.000** |
+
+At the Sonnet tier, internet supplied the own_faint rule Sonnet did not
+derive unaided (+0.040 dev F1, B2 finding). At the Opus tier, max-effort
+reasoning **already derived that exact rule from the data** (A3), so
+internet's marginal value collapses to exactly zero (B1 ≡ A3, byte-for-byte
+identical predictions). Internet is a **capability crutch**: its value is
+inversely proportional to model strength, and at the frontier it is zero for
+this domain. For the Mew LLM-as-checker-builder workflow, a frontier model
+without internet ≥ a mid-tier model with internet.
+
+### Finding 8: Training data knowledge was sufficient for all core rules
 
 A1 correctly derived PP monotonicity, faint permanence, and causal ordering rules
 from training knowledge alone. B2's internet access improved one edge-case rule
 (own_faint consistency) and prevented one potential false-positive rule (HP increase),
-but did not identify any fundamentally new violation type that A1 missed.
+but did not identify any fundamentally new violation type that A1 missed. A3
+(Opus, no internet) went further: it derived the own_faint rule *and* the
+correct HP-increase scoping unaided, and B1's internet pass confirmed every
+rule with zero additions — direct evidence that at the frontier the entire
+rule set is recoverable from training knowledge plus the development data.
 
 ---
 
@@ -208,9 +268,10 @@ less well-characterized.
 
 | Agent | Status | Adds |
 |-------|--------|------|
-| A1 Sonnet no-internet | **Complete** | Baseline |
-| A2 Haiku no-internet | **Complete** | Capability tier comparison: Haiku matches Sonnet on validation |
-| B2 Sonnet + internet | **Complete** | Isolates internet contribution at Sonnet tier (+0.040 dev F1) |
-| B1 Opus + internet | Needs separate session | Top-tier benchmark |
-| B3 Haiku + internet | Needs separate session | Internet contribution at Haiku tier |
+| A1 Sonnet no-internet | **Complete** | Baseline (dev F1 0.889) |
+| A2 Haiku no-internet | **Complete** | Capability floor: Haiku still hits val ceiling 0.867 (dev F1 0.846) |
+| A3 Opus 4.7 no-internet | **Complete** | Capability ceiling: best dev F1 0.929, derives own_faint unaided |
+| B1 Opus 4.7 + internet | **Complete** | Internet ≡ 0 at Opus tier (B1 identical to A3) |
+| B2 Sonnet + internet | **Complete** | Internet = +0.040 dev F1 at Sonnet tier |
+| B3 Haiku + internet | Needs separate session | Internet contribution at Haiku tier (predicted small, per substitution finding) |
 | C1 Sonnet serebii-only | Ready to run | Domain restriction test |
