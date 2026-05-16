@@ -625,6 +625,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.1071428571428571, \"Q3\": 0.20833333333333337, \"Q4\": 0.5}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -651,6 +653,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.1428571428571429, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -1457,6 +1461,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.05714285714285716, \"Q3\": 0.11111111111111116, \"Q4\": 0.38888888888888884}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -1483,6 +1489,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.025000000000000022, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.5666666666666667}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -2289,6 +2297,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.1071428571428571, \"Q3\": 0.20833333333333337, \"Q4\": 0.5}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -2315,6 +2325,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.1428571428571429, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -3121,6 +3133,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.05714285714285716, \"Q3\": 0.11111111111111116, \"Q4\": 0.38888888888888884}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -3147,6 +3161,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.025000000000000022, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.5666666666666667}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -3953,6 +3969,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 46, \"quartile_boundaries\": [1256.75, 1468.5, 1741.75], \"quartile_gaps\": {\"Q1\": 0.0, \"Q2\": 0.033333333333333326, \"Q3\": 0.5, \"Q4\": 0.5}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -3979,6 +3997,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 48, \"quartile_boundaries\": [2012.25, 2338.0, 2477.0], \"quartile_gaps\": {\"Q1\": 0.125, \"Q2\": 0.0, \"Q3\": 0.0, \"Q4\": 0.30000000000000004}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -4785,6 +4805,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1146.5, 1279.5, 1443.75], \"quartile_gaps\": {\"Q1\": 0.13636363636363635, \"Q2\": 0.125, \"Q3\": 0.11111111111111116, \"Q4\": 0.275}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },
@@ -4811,6 +4833,8 @@
     },
     "s5_parse_fail_flagged": false,
     "s6_quartile": "{\"n_valid\": 50, \"quartile_boundaries\": [1542.5, 1778.5, 2145.0], \"quartile_gaps\": {\"Q1\": -0.2142857142857143, \"Q2\": -0.30000000000000004, \"Q3\": 0.8333333333333334, \"Q4\": 0.38888888888888884}}",
+    "s6_quartile_deprecated": true,
+    "s6_quartile_note": "DEPRECATED: adjacent s6_quartile uses CHARACTER-based boundaries (Day 2 primary pass). Superseded by token-based boundaries in day_2/quartile_analysis/quartile_breakdown_full.csv (token_min/token_max). Do not consume s6_quartile quantitatively. See file-level __metadata.",
     "robustness_concern": false,
     "hidden_signal_candidate": false
   },

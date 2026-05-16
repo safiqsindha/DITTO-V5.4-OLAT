@@ -9,3 +9,10 @@ results/raw/
 # Log files may contain partial API key prefixes printed at executor startup.
 *.log
 day1_run.log
+
+# Claude Code internals / worktrees
+.claude/
+
+# Local safety backups (e.g. sensitivity_analyses.json.bak_pre_r2flag)
+*.bak
+*.bak_*

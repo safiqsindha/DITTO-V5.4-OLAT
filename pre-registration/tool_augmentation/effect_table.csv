@@ -1,0 +1,5 @@
+group,n,dr,note
+all_intact,18,0.0,GT_L3=False (checker says no violation)
+all_violated,32,0.9375,GT_L3=True (checker says violation)
+test9_checker_fn,2,0.0,GT_L1=True but checker=False (checker false negatives)
+true_intact,16,0.0,GT_L3=False AND GT_L1=False (genuinely intact)
