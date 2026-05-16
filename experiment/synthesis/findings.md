@@ -1,13 +1,14 @@
-# Experiment Findings — Agents A1, A2, A3, B1, and B2
+# Experiment Findings — Agents A1, A2, A3, B1, B2, and B3
 
-## Status: Phase 1 — five of six builder agents complete
+## Status: Phase 1 — six of six builder agents complete
 
 Complete: A1 (Sonnet, no internet), A2 (Haiku, no internet),
-A3 (Opus 4.7, no internet), B1 (Opus 4.7, internet), B2 (Sonnet, internet).
-Remaining: B3 (Haiku + internet), C1 (Sonnet serebii-only).
+A3 (Opus 4.7, no internet), B1 (Opus 4.7, internet), B2 (Sonnet, internet),
+B3 (Haiku + internet).
+Remaining: C1 (Sonnet serebii-only).
 
 The capability ladder (Haiku→Sonnet→Opus, no internet) and the
-internet-axis comparison at two tiers (Sonnet: A1→B2; Opus: A3→B1)
+internet-axis comparison at all three tiers (Haiku: A2→B3, Sonnet: A1→B2; Opus: A3→B1)
 are now fully characterized.
 
 ---
@@ -152,6 +153,26 @@ Same core rules as A1 plus two internet-informed enhancements:
 | 1 | Generalized monotone rule + full causal_incoherence suite from A1 | 0.889 | — |
 | 2 | Added own_faint consistency rule (trigger=own_faint without perm_faint) | **0.929** | **0.867** |
 
+## B3 Result: Moderate Success but underperforms A2 on validation
+
+**Final validation performance (n=20, held-out set):**
+
+| Metric | Value | Threshold |
+|--------|-------|-----------|
+| Precision | **1.000** | Strong >0.85 ✓ |
+| Recall | **0.647** | Moderate >0.60 ✓, Strong >0.80 ✗ |
+| F1 | **0.786** | — |
+| False positives | **0** | — |
+
+**Development set performance (n=30):**
+
+| Agent | Dev Precision | Dev Recall | Dev F1 |
+|-------|--------------|------------|--------|
+| A2 | 1.000 | 0.800 | 0.889 |
+| B3 | 1.000 | 0.800 | 0.889 |
+
+B3 matches A2 on development F1 (0.889) but underperforms on validation (0.786 vs 0.867). Both use the same conservative 5-rule architecture. Two internet searches confirmed existing rules but suggested no new patterns. B3's validation regression suggests the conservative rule set is at the edge of Haiku's capability: adding more rules (which Sonnet and Opus could safely add) would create unacceptable false positive risk.
+
 ---
 
 ## Key Findings
@@ -223,21 +244,17 @@ robustness, not a higher validation ceiling.
 
 ### Finding 7: Internet access and model capability are substitutes, not complements
 
-The internet axis measured at two capability tiers:
+The internet axis measured at all three capability tiers:
 
-| Tier | no internet → + internet | Δ Rules | Δ Dev F1 |
-|------|--------------------------|---------|----------|
-| Sonnet | A1 → B2 | +1 | **+0.040** |
-| Opus 4.7 | A3 → B1 | **0** | **0.000** |
+| Tier | no internet → + internet | Δ Rules | Δ Dev F1 | Δ Val F1 |
+|------|--------------------------|---------|----------|----------|
+| Haiku | A2 → B3 | **0** | **0.000** | **-0.081** |
+| Sonnet | A1 → B2 | +1 | **+0.040** | 0.000 |
+| Opus 4.7 | A3 → B1 | **0** | **0.000** | 0.000 |
 
-At the Sonnet tier, internet supplied the own_faint rule Sonnet did not
-derive unaided (+0.040 dev F1, B2 finding). At the Opus tier, max-effort
-reasoning **already derived that exact rule from the data** (A3), so
-internet's marginal value collapses to exactly zero (B1 ≡ A3, byte-for-byte
-identical predictions). Internet is a **capability crutch**: its value is
-inversely proportional to model strength, and at the frontier it is zero for
-this domain. For the Mew LLM-as-checker-builder workflow, a frontier model
-without internet ≥ a mid-tier model with internet.
+At the Haiku tier, internet supplied zero new rules and offered no dev F1 gain; validation F1 actually regressed (-0.081), suggesting that B3 missed a rule that A2 found through direct pattern analysis. At the Sonnet tier, internet supplied the own_faint rule Sonnet did not derive unaided (+0.040 dev F1, B2 finding). At the Opus tier, max-effort reasoning **already derived that exact rule from the data** (A3), so internet's marginal value collapses to exactly zero (B1 ≡ A3, byte-for-byte identical predictions).
+
+**Interpretation.** Internet is a **capability crutch**: its value is inversely proportional to model strength. At Haiku (weakest), it provides no benefit and may confuse pattern analysis. At Sonnet (mid-tier), it yields one edge-case rule (+0.040 dev F1). At Opus (frontier), it provides zero marginal value because frontier reasoning subsumes all recoverable rules. For the Mew LLM-as-checker-builder workflow: **a frontier model without internet ≥ a mid-tier model with internet**, and at the floor (Haiku), internet may actively harm focused pattern analysis.
 
 ### Finding 8: Training data knowledge was sufficient for all core rules
 
@@ -268,10 +285,10 @@ less well-characterized.
 
 | Agent | Status | Adds |
 |-------|--------|------|
-| A1 Sonnet no-internet | **Complete** | Baseline (dev F1 0.889) |
-| A2 Haiku no-internet | **Complete** | Capability floor: Haiku still hits val ceiling 0.867 (dev F1 0.846) |
-| A3 Opus 4.7 no-internet | **Complete** | Capability ceiling: best dev F1 0.929, derives own_faint unaided |
-| B1 Opus 4.7 + internet | **Complete** | Internet ≡ 0 at Opus tier (B1 identical to A3) |
-| B2 Sonnet + internet | **Complete** | Internet = +0.040 dev F1 at Sonnet tier |
-| B3 Haiku + internet | Needs separate session | Internet contribution at Haiku tier (predicted small, per substitution finding) |
+| A1 Sonnet no-internet | **Complete** | Baseline (dev F1 0.889, val F1 0.867) |
+| A2 Haiku no-internet | **Complete** | Capability floor: dev F1 0.889, val F1 0.867 (matches Sonnet despite smaller rule set) |
+| A3 Opus 4.7 no-internet | **Complete** | Capability ceiling: dev F1 0.929, val F1 0.867, derives own_faint unaided |
+| B1 Opus 4.7 + internet | **Complete** | Internet ≡ 0 at Opus tier (B1 byte-identical to A3) |
+| B2 Sonnet + internet | **Complete** | Internet = +0.040 dev F1 at Sonnet tier (own_faint rule) |
+| B3 Haiku + internet | **Complete** | Internet = 0.000 dev F1, -0.081 val F1 at Haiku tier (regression vs A2) |
 | C1 Sonnet serebii-only | Ready to run | Domain restriction test |
