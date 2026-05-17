@@ -1,0 +1,73 @@
+{
+  "logistic_regression": {
+    "auc": 0.8183062076911998,
+    "accuracy": 0.7655172413793103,
+    "f1": 0.7235772357723578
+  },
+  "random_forest": {
+    "auc": 0.9065485621009168,
+    "accuracy": 0.8586206896551725,
+    "f1": 0.8416988416988417,
+    "feature_importances": {
+      "lever_num": 0.25096404057909133,
+      "level_num": 0.03561638344989248,
+      "thinking_enabled": 0.0,
+      "function_calling": 0.07531156728244538,
+      "max_tokens": 0.05220492167927873,
+      "k_steps": 0.017418589397742414,
+      "cond_output_tok_p50": 0.06020469424426818,
+      "pro_baseline_correct": 0.18155573618388796,
+      "flash_baseline_correct": 0.3267240671833935
+    },
+    "calibration": {
+      "mean_predicted_proba": [
+        0.06551885242399927,
+        0.2838480104223809,
+        0.5004884531175888,
+        0.7338889579450946,
+        0.9396537583971892
+      ],
+      "fraction_positives": [
+        0.05714285714285714,
+        0.2727272727272727,
+        0.7142857142857143,
+        0.7837837837837838,
+        0.8837209302325582
+      ]
+    },
+    "threshold_analysis": {
+      "0.3": {
+        "n_flagged_as_likely_correct": 149,
+        "precision": 0.792,
+        "n_test_records": 290
+      },
+      "0.4": {
+        "n_flagged_as_likely_correct": 130,
+        "precision": 0.846,
+        "n_test_records": 290
+      },
+      "0.5": {
+        "n_flagged_as_likely_correct": 128,
+        "precision": 0.852,
+        "n_test_records": 290
+      },
+      "0.6": {
+        "n_flagged_as_likely_correct": 123,
+        "precision": 0.854,
+        "n_test_records": 290
+      },
+      "0.7": {
+        "n_flagged_as_likely_correct": 112,
+        "precision": 0.848,
+        "n_test_records": 290
+      }
+    }
+  },
+  "gradient_boosting": {
+    "auc": 0.9002592539248164,
+    "accuracy": 0.8551724137931035,
+    "f1": 0.8396946564885496
+  },
+  "full_feature_rf_auc_from_test6": 0.925,
+  "full_feature_comparison_note": "Test 6 full-feature RF AUC=0.925 used 17 features including evaluation-time features (record_output_tokens, chain_mean_output_tokens, is_intact, vtype_*). Deployment-time predictor uses only the 9 condition and baseline-run features available before executing the detection call."
+}
