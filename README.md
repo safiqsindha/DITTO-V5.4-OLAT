@@ -1,236 +1,168 @@
-# DITTO V5.4 — OLAT (One Lever At A Time)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner-light.svg" alt="Ditto v5.4 — OLAT" width="100%">
+  </picture>
+</p>
 
-Pre-registered experimental study measuring how 24 prompting/inference levers ("Levers")
-affect a model's ability to detect rule violations in Pokémon battle chains.
+# Ditto v5.4 — OLAT (One Lever At A Time)
+
+**If the inference regime matters more than the model, changing one lever at a time should show it.**
+
+OLAT is a pre-registered study of how **24 prompting and inference levers** affect a model's ability to detect rule violations in Pokémon battle chains. Every lever is varied independently against the same 50-chain set, so an effect can be attributed to the lever rather than to a bundle of simultaneous changes. 3,200 evaluations across two DeepSeek V4 models.
+
+- **One lever at a time, against a fixed chain set** — the whole point of the design, and the reason the effects are attributable
+- **Three ground-truth universes** — the same chains labelled three different ways, so a finding that only holds under one labelling is visible as such
+- **Six sensitivity analyses per condition** — a "Meaningful" result that collapses under sensitivity is flagged, not reported flat
+- **SPEC locked by hash** — deviations live in dated amendments, never in edits to the spec
+
+![Status](https://img.shields.io/badge/status-analysis%20complete-22c55e?style=flat-square)
+![Models](https://img.shields.io/badge/models-DeepSeek%20V4%20Flash%20%2B%20Pro-7C3AED?style=flat-square)
+![Evaluations](https://img.shields.io/badge/evaluations-3%2C200-7C3AED?style=flat-square)
+![Pre-registered](https://img.shields.io/badge/pre--registered-locked%20%236-7C3AED?style=flat-square)
+
+**[SPEC](pre-registration/SPEC.md)** · **[Day 2 summary](pre-registration/day_2/day_2_summary.md)** · **[Bonus analysis](pre-registration/bonus_analysis/bonus.md)** · **[Amendment 7](pre-registration/amendments/amendment_7.md)** · **[Build plan](pre-registration/BUILD_PLAN.md)**
 
 **SPEC hash (locked, Amendment #6):** `dbae94dba3ee39d67b131639ae626b1afa7f14645008d37aa0bb464e91980fc8`
-**Models evaluated:** DeepSeek V4-Flash, V4-Pro
-**Scale:** 3,200 API evaluations (64 conditions × 50 chains, dual-model)
 
----
+```bash
+python3 pre-registration/scripts/day1_executor.py --dry-run   # pre-flight + cost estimate
+python3 pre-registration/scripts/day2_analysis.py             # rebuild Day 2 effect tables
+```
 
 ## Study design
 
-Each model is evaluated on 50 chains (sampled with `seed=42` from a pool of 19,428).
-For each of 24 Levers, one or more levels (L1–L5) is run against the same chain set.
-Ground truth is assessed under three universes:
+Each model is evaluated on 50 chains sampled with `seed=42` from a pool of 19,428. For each of 24 levers, one or more levels (L1–L5) runs against that same chain set. Ground truth is assessed under three universes:
 
-| Universe | Definition | Intact/Violated split (n=50) |
+| Universe | Definition | Intact / violated (n=50) |
 |---|---|---|
-| **L1** (shuffled-vs-real) | Was the chain shuffled? | 16 / 34 |
-| **L2** (planted violations) | Does the chain contain a planted rule violation? | 16 / 34 |
-| **L3** (symbolic checker) | Does a symbolic rule checker flag a violation? | 18 / 32 |
+| **L1** — shuffled vs real | Was the chain shuffled? | 16 / 34 |
+| **L2** — planted violations | Does the chain contain a planted rule violation? | 16 / 34 |
+| **L3** — symbolic checker | Does a symbolic rule checker flag a violation? | 18 / 32 |
 
-For this 50-chain draw, L1 and L2 are identical (every chain labeled violated in L1 is
-also labeled violated in L2), so effective independent universes = 2.
+For this 50-chain draw, L1 and L2 are identical — every chain labelled violated in L1 is also violated in L2 — so the effective number of independent universes is **2, not 3.** That is a property of the draw and is reported rather than glossed.
 
 Detection rate `dr = P(YES | chain)`. Gap convention (Convention B):
+
 ```
-gap = dr_violated − dr_intact          (TPR − FPR, both inside the condition)
-effect_size = gap(condition) − gap(baseline)
+gap          = dr_violated − dr_intact          # TPR − FPR, both inside the condition
+effect_size  = gap(condition) − gap(baseline)
 ```
 
-Classification thresholds:
-
-| |effect_size| | Label |
+| \|effect_size\| | Label |
 |---|---|
 | ≥ 0.10 | Meaningful |
-| 0.03–0.10 | Directional |
+| 0.03 – 0.10 | Directional |
 | < 0.03 | Null |
 
 If the 95% BCa bootstrap CI crosses zero, the label is downgraded one level.
 
----
+## Headline findings
 
-## Methodology
+### Six meaningful conditions (Universe L3, primary)
 
-- **Parser:** 4-stage cascade on the model's `content` field (strict → permissive → md_strip → last_token). `reasoning_content` is preserved but never parsed (SPEC §8, Amendment #3).
-- **Bootstrap:** BCa with 10,000 iterations and jackknife acceleration. Seeds: 42 (Flash), 43 (Pro).
-- **Six sensitivity analyses per condition (SPEC §9.2):** S1 unparseables-as-NO; S2 unparseables-as-random; S3 arcsine-transformed gap; S4 parser-strict subset; S5 parse-failure audit (≥10% flagged); S6 response-length quartile (L18 L2/L3 only, now token-based — see Day 2 quartile analysis).
-- **Robustness flags:** `robustness_concern` if Meaningful primary + ≥3/6 sensitivities Null; `hidden_signal_candidate` if Null primary + ≥3/6 sensitivities Meaningful.
-- **Empirical Bayes shrinkage:** prior mean = 0, prior variance = median observed bootstrap variance across levers.
+| Condition | Effect | 95% CI | Meaningful in |
+|---|---:|---|---|
+| `pro_L18_L2` | 0.379 | [0.036, 0.745] | L3 only |
+| `pro_L18_L3` | 0.354 | [0.026, 0.685] | all 3 |
+| `pro_L17_L2` | 0.288 | [0.051, 0.486] | all 3 — most robust |
+| `pro_L17_L3` | 0.243 | [0.010, 0.510] | all 3 — CI boundary-sensitive |
+| `flash_L18_L2` | 0.217 | [0.026, 0.500] | L3 only |
+| `pro_L12_L3` | 0.191 | [0.017, 0.438] | L3 only |
 
----
+### The reasoning-depth valley
 
-## Repository layout
+Token-quartile analysis (which supersedes the Day 2 S6 character-length analysis) shows both V4 models following a **valley-then-peak** pattern on L18 L3. At intermediate response lengths, partial chain-of-thought is *worse than baseline*: intact chains over-trigger YES relative to violated ones.
 
-```
-pre-registration/
-├── SPEC.md                              # locked pre-registration spec
-├── BUILD_PLAN.md                        # execution plan
-├── parser_provenance.ndjson             # all 3,200 parsed records
-├── chain_condition_assignments.ndjson   # which chains assigned to which conditions
-├── chain_variants/                      # generated prompt variants per condition
-├── day_0/                               # chain pool generation
-├── day_minus_2/, day_minus_2_v4pro/     # ground-truth verification (V4-Flash, V4-Pro)
-├── day_minus_3/                         # chain pool pre-build
-├── day_2/                               # primary analysis
-│   ├── effect_table_universe_L{1,2,3}.csv
-│   ├── cross_model_deltas.csv
-│   ├── sensitivity_analyses.json
-│   ├── day_2_summary.md
-│   ├── cross_universe_comparison.md
-│   ├── chain_composition_note.md
-│   ├── convention_and_degenerate_clarification.md
-│   ├── l18_l4_diagnosis.md
-│   ├── l18_l4_qualitative_review.md
-│   ├── sensitivity_meaningful_conditions.md
-│   ├── post_day2_validation_status.md
-│   └── quartile_analysis/               # token-based S6, supersedes char-length
-│       ├── quartile_breakdown_full.csv
-│       └── bimodal_summary.md
-├── amendment_7_pilot/                   # pilots @ max_tokens 2048 + 4096
-├── amendment_7/                         # full L18 L4 retest output (parallel product)
-├── amendments/
-│   └── amendment_7.md                   # methodology amendment (DRAFT)
-├── diagnostics/                         # exploratory + diagnostic runs (Diagnostic I, etc.)
-├── decisions/                           # decision sheet
-├── scripts/                             # all executor + analysis scripts
-└── bonus_analysis/                      # post-primary observational battery (zero API)
-    ├── bonus.md                         # full per-test summary (start here)
-    ├── bonus_analysis_synthesis.md      # cross-test synthesis + Mew implications
-    ├── test_1_confabulation_patterns.md
-    ├── test_2_reasoning_depth.md
-    ├── test_3_difficulty_stratification.md
-    ├── test_4_failure_coexistence.md
-    ├── test_5_reasoning_clusters.md
-    ├── test_6_predictor.md
-    ├── test_6_models/                   # serialized RF + LR classifiers (joblib)
-    ├── test_7_verdict_stability.md
-    ├── test_8_checker_characterization.md
-    └── test_9_complementarity.md
-```
-
----
-
-## Headline findings (Universe L3, primary)
-
-**6 Meaningful conditions** (effect ≥ 0.10, CI excludes zero):
-
-| Condition | Effect | CI | Universes Meaningful in |
+| Model | Valley range | Effect in valley | Escape |
 |---|---|---|---|
-| pro_L17_L2 | 0.288 | [0.051, 0.486] | All 3 (most robust) |
-| pro_L17_L3 | 0.243 | [0.010, 0.510] | All 3 (CI boundary-sensitive) |
-| pro_L18_L3 | 0.354 | [0.026, 0.685] | All 3 |
-| pro_L18_L2 | 0.379 | [0.036, 0.745] | L3 only |
-| flash_L18_L2 | 0.217 | [0.026, 0.500] | L3 only |
-| pro_L12_L3 | 0.191 | [0.017, 0.438] | L3 only |
+| V4-Pro | 427–487 tokens | ≈ −0.36, CI [−0.78, −0.06] | ~494 tokens |
+| V4-Flash | 606–728 tokens | ≈ −0.14, CI touches 0 | ~729 tokens |
 
-**Reasoning-depth threshold effect** (token-quartile analysis, supersedes Day 2 S6 character-length):
-Both V4 models exhibit a *valley-then-peak* pattern on L18 L3. At intermediate response lengths,
-partial chain-of-thought produces **worse-than-baseline** results — intact chains over-trigger YES
-relative to violated chains.
+**This is a design constraint, not a curiosity.** Any configuration that caps CoT generation inside the valley range will perform *worse* on rule-violation detection than one that does no reasoning at all.
 
-- **V4-Pro** valley: 427–487 tokens (effect ≈ −0.36, CI [−0.78, −0.06]); escape at ~494 tokens.
-- **V4-Flash** valley: 606–728 tokens (effect ≈ −0.14, CI touches 0); escape at ~729 tokens.
+## Amendment #7 — the L18 L4 retest
 
-This is a Mew design constraint: configurations that cap CoT generation inside the valley range
-will yield worse-than-baseline behavior on rule-violation detection.
+The original L18 L4 (native thinking) run at `max_tokens=64` produced 100/100 `Unknown`. Root cause: DeepSeek applies `max_tokens` to **total** output — `reasoning_content` + `content` — not to content only, as the SPEC assumed. The entire 64-token budget was consumed by reasoning before any verdict could be emitted.
 
----
+Amendment #7 retested at `max_tokens=4096`, all other parameters unchanged (100 calls, ~$4.10).
 
-## Amendment #7 — L18 L4 (Native Thinking) retest
+**Result: Null in all three universes, for both models**, with `dr_violated = dr_intact = 1.0` on parseable records. **73 of 73 parseable verdicts are YES; zero are NO.** That is a YES-bias under native thinking, not a detection capability. 27% of records truncated at 4096 tokens (Flash 24%, Pro 30%), and intact chains truncate at 33% against 19–28% for violated — hinting at asymmetric reasoning cost.
 
-The original L18 L4 run (`max_tokens=64`) produced 100/100 `Unknown`. Root cause: DeepSeek's
-API applies `max_tokens` to total output (`reasoning_content` + `content`), not content-only
-as the SPEC assumed. The 64-token budget was entirely consumed by reasoning before any verdict
-could be emitted.
+The retest is written to `pre-registration/amendment_7/` as a **parallel product**. It is not merged into the primary effect tables without both-author sign-off. See the [summary](pre-registration/amendment_7/summary.md) and the [truncation breakdown](pre-registration/amendment_7/truncation_breakdown.md).
 
-**Amendment #7** retested L18 L4 at `max_tokens=4096` (other parameters unchanged). The full
-retest is complete (100 calls; cost ~$4.10).
+## Bonus analysis
 
-**Headline:** L18 L4 classifies as **Null in all 3 universes for both models**, with
-`dr_violated = dr_intact = 1.0` on parseable records. **73/73 parseable verdicts are YES, 0
-are NO** — a model YES-bias under native thinking, not a detection capability. 27% of
-records truncated at 4096 tokens (Flash 24%, Pro 30%); intact chains truncate at 33% vs.
-19–28% on violated, hinting at asymmetric reasoning cost.
-
-The retest output is written to `pre-registration/amendment_7/` as a *parallel product* — not
-merged into primary effect tables without both-author signoff. See
-[`pre-registration/amendment_7/summary.md`](pre-registration/amendment_7/summary.md) for the
-effect tables and [`pre-registration/amendment_7/truncation_breakdown.md`](pre-registration/amendment_7/truncation_breakdown.md)
-for the truncation diagnostic. Methodology amendment doc:
-[`pre-registration/amendments/amendment_7.md`](pre-registration/amendments/amendment_7.md).
-
----
-
-## Bonus Analysis
-
-Post-primary observational analysis battery. Zero API cost — all findings from records already on disk.
-10 pre-specified tests covering confabulation patterns, reasoning depth, chain difficulty, failure mode
-coexistence, topic modeling, a detection-success predictor (ML), verdict stability, symbolic checker
-characterization, LLM-checker complementarity, and composition sensitivity.
-
-**9 of 10 tests complete.** Test 10 (composition sensitivity) is blocked by a missing pool data file
-(`phase3_results_v4.csv`). Test 5 (topic modeling) produced a null finding.
-
-**Top findings:**
+A post-primary observational battery of 10 pre-specified tests, at **zero API cost** — every finding comes from records already on disk. 9 of 10 complete; Test 10 (composition sensitivity) is blocked on a missing pool file (`phase3_results_v4.csv`), and Test 5 (topic modelling) returned a null.
 
 | Finding | Source |
 |---|---|
 | All 50 OLAT chains are exactly 15 steps — chain-length stratification is degenerate | Test 3 |
-| 31/32 violated chains are blind spots for both models (<40% DR across all conditions) | Test 3 |
-| Symbolic checker: precision=1.0, recall=0.941 on OLAT subset | Tests 8, 9 |
-| Checker covers 94.7% of LLM failures; LLM covers only 18.3% of checker failures | Test 9 |
-| Random Forest predictor: 84.7% accuracy, AUC=0.925; top feature = lever choice | Test 6 |
-| L18 L4 (native thinking) produces YES on 100% of parseable records — no specificity | Tests 1, 2 |
-| Deeper reasoning (3.7× longer, L18 L4) does not improve accuracy vs L18 L3 | Test 2 |
-| No chain achieves YES rate above 0.30 across all 64 conditions — strong NO-bias floor | Test 7 |
+| 31 of 32 violated chains are blind spots for both models (< 40% DR across all conditions) | Test 3 |
+| Symbolic checker: precision 1.0, recall 0.941 on the OLAT subset | Tests 8, 9 |
+| The checker covers 94.7% of LLM failures; the LLM covers only 18.3% of checker failures | Test 9 |
+| Random-forest predictor: 84.7% accuracy, AUC 0.925 — top feature is lever choice | Test 6 |
+| L18 L4 (native thinking) returns YES on 100% of parseable records — no specificity | Tests 1, 2 |
+| Deeper reasoning (3.7× longer) does not improve accuracy over L18 L3 | Test 2 |
+| No chain exceeds a 0.30 YES rate across all 64 conditions — a strong NO-bias floor | Test 7 |
 
-**Architecture implication:** A checker-primary + LLM-secondary ensemble under L18-class conditions
-outperforms either alone. The bottleneck is representational (the chain format lacks LLM pattern-
-matching hooks), not reasoning depth. Condition choice (lever) matters more than chain properties.
+**Architectural implication.** A checker-primary, LLM-secondary ensemble under L18-class conditions beats either component alone. The bottleneck is **representational** — the chain format lacks the pattern-matching hooks an LLM needs — not a matter of reasoning depth. Condition choice matters more than chain properties.
 
-See [`pre-registration/bonus_analysis/bonus.md`](pre-registration/bonus_analysis/bonus.md) for the
-full per-test summary and [`pre-registration/bonus_analysis/bonus_analysis_synthesis.md`](pre-registration/bonus_analysis/bonus_analysis_synthesis.md)
-for cross-test synthesis and Mew architectural implications.
+Full write-ups: [`bonus.md`](pre-registration/bonus_analysis/bonus.md) · [`bonus_analysis_synthesis.md`](pre-registration/bonus_analysis/bonus_analysis_synthesis.md)
 
----
+## Methodology
 
-## Reproducing the analysis
-
-```bash
-# Requires DEEPSEEK_API_KEY in ../.env (path resolved by scripts at runtime)
-python3 pre-registration/scripts/day1_executor.py --dry-run    # pre-flight + cost estimate
-python3 pre-registration/scripts/day1_executor.py              # full Day 1 run
-python3 pre-registration/scripts/day2_analysis.py              # rebuild Day 2 effect tables
-python3 pre-registration/scripts/quartile_analysis.py          # token-quartile breakdown
-```
-
-All scripts are append-only with resume support (`parser_provenance.ndjson` keyed by
-`(condition_id, sample_id)`).
-
----
+- **Parser** — 4-stage cascade over the model's `content` field: strict → permissive → md_strip → last_token. `reasoning_content` is preserved but never parsed (SPEC §8, Amendment #3).
+- **Bootstrap** — BCa, 10,000 iterations, jackknife acceleration. Seeds 42 (Flash), 43 (Pro).
+- **Six sensitivity analyses per condition** (SPEC §9.2) — S1 unparseables-as-NO; S2 unparseables-as-random; S3 arcsine-transformed gap; S4 parser-strict subset; S5 parse-failure audit (flagged at ≥ 10%); S6 response-length quartile, now token-based.
+- **Robustness flags** — `robustness_concern` when a Meaningful primary has ≥ 3/6 sensitivities Null; `hidden_signal_candidate` when a Null primary has ≥ 3/6 sensitivities Meaningful.
+- **Empirical Bayes shrinkage** — prior mean 0, prior variance = median observed bootstrap variance across levers.
 
 ## Status
 
 | Phase | Status |
 |---|---|
 | Day −3 chain pool generation | Complete |
-| Day −2 ground-truth verification (Flash) | Complete |
-| Day −2 ground-truth verification (Pro) | Complete |
-| Day 1 executor (3,200 evaluations) | Complete |
-| Day 2 analysis (effect tables, sensitivities, EB shrinkage, deltas) | Complete |
+| Day −2 ground-truth verification (Flash, Pro) | Complete |
+| Day 1 executor — 3,200 evaluations | Complete |
+| Day 2 analysis — effect tables, sensitivities, EB shrinkage, deltas | Complete |
 | Day 2 post-validation (6 tasks) | Complete |
-| Quartile analysis (token-based, supersedes Day 2 S6 char-length) | Complete |
-| Amendment #7 pilots (max_tokens 2048, 4096) | Complete |
-| Amendment #7 full retest (100 calls at max_tokens=4096) | Complete |
-| Amendment #7B (subset retest at 8192, optional) | Pending decision |
-| Bonus analysis battery (10 observational tests, zero API) | Complete (9/10; Test 10 blocked) |
-| Both-author signoff | Pending |
+| Quartile analysis (token-based) | Complete |
+| Amendment #7 pilots + full retest | Complete |
+| Amendment #7B — subset retest at 8192 | Pending decision |
+| Bonus analysis battery | Complete (9/10; Test 10 blocked) |
+| Both-author sign-off | Pending |
 
----
+All scripts are append-only with resume support, keyed on `(condition_id, sample_id)` in `parser_provenance.ndjson`.
+
+## Reproducing
+
+```bash
+# Requires DEEPSEEK_API_KEY in ../.env (resolved by the scripts at runtime)
+python3 pre-registration/scripts/day1_executor.py --dry-run    # pre-flight + cost estimate
+python3 pre-registration/scripts/day1_executor.py              # full Day 1 run
+python3 pre-registration/scripts/day2_analysis.py              # rebuild Day 2 effect tables
+python3 pre-registration/scripts/quartile_analysis.py          # token-quartile breakdown
+```
 
 ## Pre-registration provenance
 
-This study was pre-registered before any data collection. The SPEC has been locked since
-Amendment #6 (hash `dbae94d…`). All deviations from the locked SPEC are recorded in
-`pre-registration/amendments/`. The Amendment #7 retest is the only post-Day-1 methodology
-change; all other Day 2 outputs use the original locked SPEC.
+This study was pre-registered before any data collection, and the SPEC has been locked since Amendment #6 (hash `dbae94d…`). Every deviation is recorded in `pre-registration/amendments/`. The Amendment #7 retest is the only post-Day-1 methodology change; all other Day 2 outputs use the original locked SPEC.
 
----
+## The Ditto program
+
+| Version | Domain | Headline |
+|---|---|---|
+| [v1](https://github.com/safiqsindha/Project-Ditto) | Pokémon Showdown telemetry | Sonnet +0.206 · Haiku +0.066 |
+| [v2](https://github.com/safiqsindha/Project-Ditto-v2) | Programming agent trajectories | Partial reproduction |
+| [v3](https://github.com/safiqsindha/Project-Ditto-V3) | Chess · Chess960 · checkers · draughts | Phase 1 complete, paused at Gate 8 |
+| [v4](https://github.com/safiqsindha/Project-Ditto-V4) | Pokémon, as a methodology control | +0.131, strong-positive |
+| [v4.5](https://github.com/safiqsindha/Ditto-V4.5--DeepSeek-Flash-test) | DeepSeek V4 Flash cross-model probe | Scoping stub |
+| [v5](https://github.com/safiqsindha/Ditto-V5) | PUBG · NBA · CS:GO · Rocket League · poker | 4-tier hierarchy, closed |
+| [v5.1](https://github.com/safiqsindha/Ditto-5.1) | 22-model cross-provider panel | Near-chance across the panel |
+| [v5.2](https://github.com/safiqsindha/Ditto-5.2-diagostic) | Diagnostic kit for the v5.1 null | Pre-registered, in progress |
+| **v5.4** ⟵ *you are here* | **24 inference levers, two DeepSeek models** | **6 meaningful conditions** |
 
 ## License
 
-Research artifacts, no commercial license declared. Contact repo owner for use beyond
-academic citation.
+Research artifacts; no commercial license is declared. Contact the repository owner for use beyond academic citation.
